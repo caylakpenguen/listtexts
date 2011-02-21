@@ -1,0 +1,47 @@
+%ifaction unsub%Subject: Goodbye from $listaddr$%endif%
+%ifaction release reject%Subject: Moderated $listaddr$: $subject$%endif%
+%ifaction permit obstruct%Subject: Guarded $listaddr$: $subaddr$%endif%
+%ifaction post%Subject: Posted to $listaddr$: $subject$%endif%
+
+%wrap%Hi, this is the Mlmmj program managing the $listaddr$ mailing list.
+
+%wrap%
+%ifaction unsub%
+  %ifreason request%
+  %endif%
+  %ifreason confirm%
+    Thank you for confirming your unsubscribe.
+  %endif%
+  You have now been removed from
+  %iftype normal%%endif%
+  %iftype digest% the digest version of %endif%
+  %iftype nomail% the no-mail version of %endif%
+  the list.
+%endif%
+%ifaction release%
+  You have successfully released the message from $posteraddr$ with subject
+  "$subject" to the list.
+%endif%
+%ifaction reject%
+  You have successfully rejected the message from $posteraddr$ with subject
+  "$subject".
+%endif%
+%ifaction permit%
+  You have successfully permitted $subaddr$ to join the list.
+%endif%
+%ifaction obstruct%
+  You have successfully obstructed $subaddr$ from joining the list.
+%endif%
+%ifaction post%
+  %ifreason confirm%
+    Thank you for confirming your post.
+  %endif%
+  %ifreason release%
+    A moderator has released your post.
+  %endif%
+  %ifreason request%
+    Thank you for your post.
+  %endif%
+  It is now being distributed to the list.
+%endif%
+

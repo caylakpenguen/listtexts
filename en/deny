@@ -1,0 +1,84 @@
+%ifaction sub%Subject: Unable to subscribe to $listaddr$%endif%
+%ifaction unsub%Subject: Unable to unsubscribe from $listaddr$%endif%
+%ifaction release reject%Subject: Unable to moderate $listaddr$%endif%
+%ifaction permit obstruct%Subject: Unable to gatekeep $listaddr$%endif%
+
+%wrap%Hi, this is the Mlmmj program managing the $listaddr$ mailing list.
+
+%wrap%
+%ifaction sub%
+  You were unable to be subscribed to the list
+  %ifreason disabled%
+    because
+    %iftype normal%%endif%
+    %iftype digest% the digest version of %endif%
+    %iftype nomail% the no-mail version of %endif%
+    the list is turned off.
+  %endif%
+  %ifreason closed%
+    because people are not allowed to subscribe to this list by email.
+  %endif%
+  %ifreason subbed%
+    because you are already subscribed.
+  %endif%
+  %ifreason obstruct%
+    because a gatekeeper obstructed your entry.
+  %endif%
+%endif%
+%ifaction unsub%
+  You were unable to be unsubscribed from
+  %iftype normal%%endif%
+  %iftype digest% the digest version of %endif%
+  %iftype nomail% the no-mail version of %endif%
+  the list
+  %ifreason unsubbed%
+    because you are not subscribed.
+
+%wrap%
+    If you are receiving messages, perhaps a different email address is
+    subscribed. To find out which address you are subscribed with, refer to
+    the message welcoming you to the list, or look at the envelope
+    "Return-Path" header of a message you receive from the list.
+    %iftype digest%
+      Or perhaps you are subscribed to the normal version of the list. To
+      unsubscribe from that version of the list, send a message to
+      $listunsubaddr$
+    %endif
+    %iftype normal%
+      Or perhaps you are subscribed to the digest version of the list. To
+      unsubscribe from that version of the list, send a message to
+      $digestunsubaddr$
+    %endif
+  %endif%
+%endif%
+%ifaction release reject%
+  %ifaction release%
+    You were unable to release the specified post to the list
+  %endif%
+  %ifaction reject%
+    You were unable to reject the specified post
+  %endif%
+  %ifreason notfound%
+    because it could not be found. Perhaps another moderator already
+    released or rejected it, or it expired.
+  %endif%
+  %ifreason moderators%
+    because you are not a moderator for the list.
+  %endif%
+%endif%
+%ifaction permit obstruct%
+  %ifaction permit%
+    You were unable to permit the specified subscription request
+  %endif%
+  %ifaction obstruct%
+    You were unable to obstruct the specified subscription request
+  %endif%
+  %ifreason notfound%
+    because it could not be found. Perhaps another gatekeeper already
+    permitted or obstructed it, or it expired.
+  %endif%
+  %ifreason gatekeepers%
+    because you are not a gatekeeper for the list.
+  %endif%
+%endif%
+

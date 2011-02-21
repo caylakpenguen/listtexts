@@ -1,0 +1,84 @@
+Subject: Post to $listaddr$ denied: $subject$
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="=_$random0$$random1$_="
+Content-Transfer-Encoding: 8bit
+
+--=_$random0$$random1$_=
+Content-Type: text/plain; charset=utf8
+Content-Transfer-Encoding: 8bit
+
+%wrap%Hi, this is the Mlmmj program managing the $listaddr$ mailing list.
+
+%wrap%The message from $posteraddr$ with subject "$subject" was unable
+to be delivered to the list
+%ifreason maxmailsize%
+  because it exceeded the maximum allowed message size of $maxmailsize$
+  bytes.
+%endif%
+%ifreason tocc%
+  because the list address was not found in either the To: or CC: header.
+%endif%
+%ifreason access%
+  because of an access rule set up by the list administrator.
+%endif%
+%ifreason reject%
+  because a moderator rejected it.
+%endif%
+%ifreason subonlypost%
+  because you are not a list subscriber.
+
+%wrap%
+  %ifncontrol closedlist%%ifncontrol closedlistsub%
+    However, this is an open list. If you wish, you can simultaneously
+    subscribe and release your post by sending a message to
+    $listsubreleaseaddr$ which can usually be done simply by replying to
+    this message. The subject and the body of the message can be anything.
+    %ifncontrol nodigestsub%
+
+%wrap%
+      Or you can simultaneously subscribe to the digest version of the list
+      and release your post by sending a message to $nomailsubreleaseaddr$
+      and you will receive multiple posts in a single message, at regular
+      intervals, or when a lot of posts have accumulated.
+    %endif%
+    %ifncontrol nonomailsub%
+
+%wrap%
+      Or you can simultaneously subscribe to the no-mail version of the list
+      and release your post by sending a message to $nomailsubreleaseaddr$
+      and you will not receive posts sent to the list. This means you
+      potentially will not see replies to your message, unless you follow
+      the list using a web archive or have another email address subscribed
+      to another version of the list.
+    %endif%
+  %endif%%endif%
+  %ifcontrol closedlist closedlistsub%
+    If you wish to become a subscriber, you will need to contact a list
+    administrator. You can email $listowner$ to contact the list owner.
+  %endif%
+
+%wrap%
+  If you believe you are a subscriber, you are probably subscribed with a
+  different email address. To find out which address you are subscribed
+  with, refer to the message welcoming you to the list, or look at the
+  envelope "Return-Path" header of a message you receive from the list.
+%endif%
+
+%ifreason maxmailsize%
+(The beginning of the denied message is below.)
+%else%
+(The denied message is below.)
+%endif%
+
+--=_$random0$$random1$_=
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline; filename="message.eml"
+
+%ifreason maxmailsize%
+$originalmail100$
+%else%
+$originalmail1000000000$
+%endif%
+--=_$random0$$random1$_=--
