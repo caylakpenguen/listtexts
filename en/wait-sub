@@ -1,6 +1,6 @@
-Subject: Awaiting permission to join $listaddr$
+Subject: Awaiting permission to join $list$@$domain$
 
-%wrap%Hi, this is the Mlmmj program managing the $listaddr$ mailing list.
+%text prologue%
 
 %wrap%Your request to join the list has been received. However, the
 gatekeepers are being asked to review it before permitting you to join.

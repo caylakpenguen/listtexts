@@ -1,7 +1,7 @@
-%ifaction sub%Subject: Confirm subscription to $listaddr$%endif%
-%ifaction unsub%Subject: Confirm unsubscribe from $listaddr$%endif%
+%ifaction sub%Subject: Confirm subscription to $list$@$domain$%endif%
+%ifaction unsub%Subject: Confirm unsubscribe from $list$@$domain$%endif%
 
-%wrap%Hi, this is the Mlmmj program managing the $listaddr$ mailing list.
+%text prologue%
 
 %wrap%
 %ifaction sub%

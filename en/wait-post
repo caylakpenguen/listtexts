@@ -1,4 +1,4 @@
-Subject: Awaiting release to $listaddr$: $subject$
+Subject: Awaiting release to $list$@$domain$: $subject$
 MIME-Version: 1.0
 Content-Type: multipart/mixed;
  boundary="=_$random0$$random1$_="
@@ -8,7 +8,7 @@ Content-Transfer-Encoding: 8bit
 Content-Type: text/plain; charset=utf8
 Content-Transfer-Encoding: 8bit
 
-%wrap%Hi, this is the Mlmmj program managing the $listaddr$ mailing list.
+%text prologue%
 
 %wrap%The message from $posteraddr$ with subject "$subject$" has been
 submitted to the list. However, the moderators are being asked to review it

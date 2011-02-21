@@ -1,9 +1,9 @@
-%ifaction unsub%Subject: Goodbye from $listaddr$%endif%
-%ifaction release reject%Subject: Moderated $listaddr$: $subject$%endif%
-%ifaction permit obstruct%Subject: Guarded $listaddr$: $subaddr$%endif%
-%ifaction post%Subject: Posted to $listaddr$: $subject$%endif%
+%ifaction unsub%Subject: Goodbye from $list$@$domain$%endif%
+%ifaction release reject%Subject: Moderated $list$@$domain$: $subject$%endif%
+%ifaction permit obstruct%Subject: Guarded $list$@$domain$: $subaddr$%endif%
+%ifaction post%Subject: Posted to $list$@$domain$: $subject$%endif%
 
-%wrap%Hi, this is the Mlmmj program managing the $listaddr$ mailing list.
+%text prologue%
 
 %wrap%
 %ifaction unsub%

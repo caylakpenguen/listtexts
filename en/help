@@ -1,6 +1,6 @@
-Subject: Information for $listaddr$
+Subject: Information for $list$@$domain$
 
-%wrap%Hi, this is the Mlmmj program managing the $listaddr$ mailing list.
+%text prologue%
 
 Here is some information about the list.
 
@@ -11,12 +11,12 @@ It has the following versions:
 %ifcontrol closedlist closedlistsub%
   - Subscribe by contacting a list administrator.
 %else%
-  - %wrap%Subscribe by emailing: $listsubaddr$
+  - %wrap%Subscribe by emailing: $list+$subscribe@$domain$
 %endif%
 %ifcontrol closedlist%
   - Unsubscribe by contacting a list administrator.
 %else%
-  - %wrap%Unsubscribe by emailing: $listunsubaddr$
+  - %wrap%Unsubscribe by emailing: $list+$unsubscribe@$domain$
 %endif%
 
 %ifncontrol nodigestsub%
@@ -25,12 +25,12 @@ It has the following versions:
 %ifcontrol closedlist closedlistsub%
   - Subscribe by contacting a list administrator.
 %else%
-  - %wrap%Subscribe by emailing: $digestsubaddr$
+  - %wrap%Subscribe by emailing: $list+$subscribe-digest@$domain$
 %endif%
 %ifcontrol closedlist%
   - Unsubscribe by contacting a list administrator.
 %else%
-  - %wrap%Unsubscribe by emailing: $digestunsubaddr$
+  - %wrap%Unsubscribe by emailing: $list+$unsubscribe-digest@$domain$
 %endif%
 
 %endif%
@@ -42,12 +42,12 @@ It has the following versions:
 %ifcontrol closedlist closedlistsub%
   - Subscribe by contacting a list administrator.
 %else%
-  - %wrap%Subscribe by emailing: $nomailsubaddr$
+  - %wrap%Subscribe by emailing: $list+$subscribe-nomail@$domain$
 %endif%
 %ifcontrol closedlist%
   - Unsubscribe by contacting a list administrator.
 %else%
-  - %wrap%Unsubscribe by emailing: $nomailunsubaddr$
+  - %wrap%Unsubscribe by emailing: $list+$unsubscribe-nomail@$domain$
 %endif%
 
 %endif%
@@ -56,7 +56,7 @@ The list has gatekeepers who will review subscription requests before
 permitting new members.
 
 %endif%
-Posts are made by emailing $listaddr$
+Posts are made by emailing $list$@$domain$
 
 %ifcontrol subonlypost%%ifncontrol modnonsubposts%
 However, only subscribers may post to the list.
@@ -86,8 +86,13 @@ Anyone
 Subscribers
 %endif%
 can retrieve message number N from the list's archive by sending a message
-to $listgetN$ (and changing the N to the number of the desired message).
+to $list+$get-N@$domain$ (change the N to the number of the desired message).
 
 %endif%%endif%
-To contact the list owner, send a message to $listowner$
+%wrap%
+You can retrieve the frequently asked questions document for the list by
+sending a message to $list+$faq@$domain$
+
+%wrap%
+To contact the list owner, send a message to $list+$owner@$domain$
 

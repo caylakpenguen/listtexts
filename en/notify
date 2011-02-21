@@ -1,7 +1,7 @@
-%ifaction sub%Subject: Subscribed to $listaddr$: $subaddr$%endif%
-%ifaction unsub%Subject: Unsubscribed from $listaddr$: $subaddr$%endif%
+%ifaction sub%Subject: Subscribed to $list$@$domain$: $subaddr$%endif%
+%ifaction unsub%Subject: Unsubscribed from $list$@$domain$: $subaddr$%endif%
 
-%wrap%Hi, this is the Mlmmj program managing the $listaddr$ mailing list.
+%text prologue%
 
 %wrap%
 %ifaction sub%

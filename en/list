@@ -1,6 +1,6 @@
-Subject: Subscribers to $listaddr$
+Subject: Subscribers to $list$@$domain$
 
-%wrap%Hi, this is the Mlmmj program managing the $listaddr$ mailing list.
+%text prologue%
 
 %wrap%Here is the list of subscribers
 %iftype all%

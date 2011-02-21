@@ -1,9 +1,9 @@
-%ifaction sub%Subject: Unable to subscribe to $listaddr$%endif%
-%ifaction unsub%Subject: Unable to unsubscribe from $listaddr$%endif%
-%ifaction release reject%Subject: Unable to moderate $listaddr$%endif%
-%ifaction permit obstruct%Subject: Unable to gatekeep $listaddr$%endif%
+%ifaction sub%Subject: Unable to subscribe to $list$@$domain$%endif%
+%ifaction unsub%Subject: Unable to unsubscribe from $list$@$domain$%endif%
+%ifaction release reject%Subject: Unable to moderate $list$@$domain$%endif%
+%ifaction permit obstruct%Subject: Unable to gatekeep $list$@$domain$%endif%
 
-%wrap%Hi, this is the Mlmmj program managing the $listaddr$ mailing list.
+%text prologue%
 
 %wrap%
 %ifaction sub%
@@ -42,12 +42,12 @@
     %iftype digest%
       Or perhaps you are subscribed to the normal version of the list. To
       unsubscribe from that version of the list, send a message to
-      $listunsubaddr$
+      $list+$unsubscribe@$domain$
     %endif
     %iftype normal%
       Or perhaps you are subscribed to the digest version of the list. To
       unsubscribe from that version of the list, send a message to
-      $digestunsubaddr$
+      $list+$unsubscribe-digest@$domain$
     %endif
   %endif%
 %endif%

@@ -1,6 +1,6 @@
-Subject: Bouncing messages from $listaddr$
+Subject: Bouncing messages from $list$@$domain$
 
-%wrap%Hi, this is the Mlmmj program managing the $listaddr$ mailing list.
+%text prologue%
 
 Some messages to you could not be delivered. If you're seeing this
 message it means things are back to normal, and it's merely for your

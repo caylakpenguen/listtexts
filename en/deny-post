@@ -1,4 +1,4 @@
-Subject: Post to $listaddr$ denied: $subject$
+Subject: Post to $list$@$domain$ denied: $subject$
 MIME-Version: 1.0
 Content-Type: multipart/mixed;
  boundary="=_$random0$$random1$_="
@@ -8,7 +8,7 @@ Content-Transfer-Encoding: 8bit
 Content-Type: text/plain; charset=utf8
 Content-Transfer-Encoding: 8bit
 
-%wrap%Hi, this is the Mlmmj program managing the $listaddr$ mailing list.
+%text prologue%
 
 %wrap%The message from $posteraddr$ with subject "$subject" was unable
 to be delivered to the list
@@ -55,7 +55,8 @@ to be delivered to the list
   %endif%%endif%
   %ifcontrol closedlist closedlistsub%
     If you wish to become a subscriber, you will need to contact a list
-    administrator. You can email $listowner$ to contact the list owner.
+    administrator. You can email $list+$owner@$domain$ to contact the list
+    owner.
   %endif%
 
 %wrap%

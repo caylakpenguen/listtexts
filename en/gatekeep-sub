@@ -1,6 +1,6 @@
-Subject: Subscription request for $listaddr$: $subaddr$
+Subject: Subscription request for $list$@$domain$: $subaddr$
 
-%wrap%Hi, this is the Mlmmj program managing the $listaddr$ mailing list.
+%text prologue%
 
 %wrap%There has been a request from $subaddr$ to join
 %iftype normal%%endif%
