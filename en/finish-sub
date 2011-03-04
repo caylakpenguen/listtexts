@@ -20,12 +20,13 @@ the list.
 
 The email address you are subscribed with is $reqaddr$.
 
-%wrap%
 %ifcontrol closedlist%
+%wrap%
   If you ever wish to unsubscribe, you will need to contact a list
   administrator. You can email $list+$owner@$domain$ to contact the list
   owner.
 %else%
+%wrap%
   If you ever wish to unsubscribe, send a message to
   %iftype normal%$list+$unsubscribe@$domain$%endif%
   %iftype digest%$list+$unsubscribe-digest@$domain$%endif%

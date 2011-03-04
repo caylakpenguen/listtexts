@@ -3,8 +3,8 @@
 
 %text prologue%
 
-%wrap%
 %ifaction sub%
+%wrap%
   Somebody (and we hope it was you) has requested that your email address
   $subaddr$ be added
   %iftype normal%
@@ -24,7 +24,9 @@
     email address.
   %endif%
 %endif%
+
 %ifaction unsub%
+%wrap%
   Somebody (and we hope it was you) has requested that the email address
   $subaddr$ be removed from
   %iftype normal%%endif%

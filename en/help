@@ -32,8 +32,8 @@ It has the following versions:
 %else%
   - %wrap%Unsubscribe by emailing: $list+$unsubscribe-digest@$domain$
 %endif%
-
 %endif%
+
 %ifncontrol nonomailsub%
 - The no-mail version: Subscribers do not receive any posts to the list.
   This means, though, they are able to post to a list which only subscribers
@@ -49,46 +49,45 @@ It has the following versions:
 %else%
   - %wrap%Unsubscribe by emailing: $list+$unsubscribe-nomail@$domain$
 %endif%
-
 %endif%
+
 %ifcontrol submod%
 The list has gatekeepers who will review subscription requests before
 permitting new members.
-
 %endif%
+
 Posts are made by emailing $list$@$domain$
 
 %ifcontrol subonlypost%%ifncontrol modnonsubposts%
 However, only subscribers may post to the list.
-
 %endif%%endif%
+
 %ifcontrol moderated%
 The list has moderators who will review all posts before releasing them to
 the list.
-
 %else%
 %ifcontrol subonlypost%%ifcontrol modnonsubposts%
 The list has moderators who will review posts from non-subscribers before
 releasing them to the list.
-
 %endif%%endif%
 %endif%
+
 %ifcontrol access%
 The list also has access rules which may affect who can post and which posts
 are moderated.
-
 %endif%
+
 %ifncontrol noget%%ifncontrol noarchive%
 %wrap%
 %ifcontrol subonlyget%
-Anyone
+  Anyone
 %else%
-Subscribers
+  Subscribers
 %endif%
 can retrieve message number N from the list's archive by sending a message
 to $list+$get-N@$domain$ (change the N to the number of the desired message).
-
 %endif%%endif%
+
 %wrap%
 You can retrieve the frequently asked questions document for the list by
 sending a message to $list+$faq@$domain$

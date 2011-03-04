@@ -25,8 +25,8 @@ The message is below.
 
 %wrap%To release it to the list, please send a message to $releaseaddr$
 which can usually be done simply by replying to this message.
-%ifcontrol subonrelease%
 
+%ifcontrol subonrelease%
 If you wish, you can simultaneously release the post and subscribe the
 poster by sending a message to one of the following addresses:
 - Normal version: $listsubreleaseaddr$

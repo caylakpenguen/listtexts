@@ -5,8 +5,8 @@
 
 %text prologue%
 
-%wrap%
 %ifaction sub%
+%wrap%
   You were unable to be subscribed to the list
   %ifreason disabled%
     because
@@ -25,7 +25,9 @@
     because a gatekeeper obstructed your entry.
   %endif%
 %endif%
+
 %ifaction unsub%
+%wrap%
   You were unable to be unsubscribed from
   %iftype normal%%endif%
   %iftype digest% the digest version of %endif%
@@ -51,7 +53,9 @@
     %endif
   %endif%
 %endif%
+
 %ifaction release reject%
+%wrap%
   %ifaction release%
     You were unable to release the specified post to the list
   %endif%
@@ -66,7 +70,9 @@
     because you are not a moderator for the list.
   %endif%
 %endif%
+
 %ifaction permit obstruct%
+%wrap%
   %ifaction permit%
     You were unable to permit the specified subscription request
   %endif%
