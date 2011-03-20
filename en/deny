@@ -21,6 +21,9 @@
   %ifreason subbed%
     because you are already subscribed.
   %endif%
+  %ifreason expired%
+    because too much time passed without a gatekeeper permitting your entry.
+  %endif%
   %ifreason obstruct%
     because a gatekeeper obstructed your entry.
   %endif%

@@ -22,6 +22,9 @@ to be delivered to the list
 %ifreason access%
   because of an access rule set up by the list administrator.
 %endif%
+%ifreason expired%
+  because too much time passed without any moderator releasing it.
+%endif%
 %ifreason reject%
   because a moderator rejected it.
 %endif%
