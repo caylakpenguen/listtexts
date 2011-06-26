@@ -2,11 +2,11 @@ Subject: Subscription request for $list$@$domain$: $subaddr$
 
 %text prologue%
 
-%wrap%There has been a request from $subaddr$ to join
-%iftype normal%%endif%
-%iftype digest% the digest version of %endif%
-%iftype nomail% the no-mail version of %endif%
-the list.
+%wrap%There has been a request from $subaddr$ to join the
+%iftype normal% normal %endif%
+%iftype digest% digest %endif%
+%iftype nomail% no-mail %endif%
+version of the list.
 
 %wrap%To permit this, please send a message to $permitaddr$ which can
 usually be done simply by replying to this message.

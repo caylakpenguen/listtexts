@@ -12,11 +12,15 @@ Subject: Welcome to $list$@$domain$
 %ifreason permit%
   A gatekeeper has permitted you to join us.
 %endif%
-You have now been added to
-%iftype normal%%endif%
-%iftype digest% the digest version of %endif%
-%iftype nomail% the no-mail version of %endif%
-the list.
+%ifreason switch%
+  Your subscription has been switched to the
+%else%
+  You have now been added to the
+%endif%
+%iftype normal% normal %endif%
+%iftype digest% digest %endif%
+%iftype nomail% no-mail %endif%
+version of the list.
 
 The email address you are subscribed with is $reqaddr$.
 
@@ -28,9 +32,7 @@ The email address you are subscribed with is $reqaddr$.
 %else%
 %wrap%
   If you ever wish to unsubscribe, send a message to
-  %iftype normal%$list+$unsubscribe@$domain$%endif%
-  %iftype digest%$list+$unsubscribe-digest@$domain$%endif%
-  %iftype nomail%$list+$unsubscribe-nomail@$domain$%endif%
+  $list+$unsubscribe@$domain$
   using this email address. The subject and the body of the message can be
   anything. You will then receive confirmation or further instructions.
 %endif%

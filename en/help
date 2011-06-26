@@ -4,7 +4,7 @@ Subject: Information for $list$@$domain$
 
 Here is some information about the list.
 
-It has the following versions:
+You can subscribe to the following versions:
 
 - The normal version: Every time a post is sent to the list, subscribers
   receive a copy of it.
@@ -12,11 +12,6 @@ It has the following versions:
   - Subscribe by contacting a list administrator.
 %else%
   - %wrap%Subscribe by emailing: $list+$subscribe@$domain$
-%endif%
-%ifcontrol closedlist%
-  - Unsubscribe by contacting a list administrator.
-%else%
-  - %wrap%Unsubscribe by emailing: $list+$unsubscribe@$domain$
 %endif%
 
 %ifncontrol nodigestsub%
@@ -26,11 +21,6 @@ It has the following versions:
   - Subscribe by contacting a list administrator.
 %else%
   - %wrap%Subscribe by emailing: $list+$subscribe-digest@$domain$
-%endif%
-%ifcontrol closedlist%
-  - Unsubscribe by contacting a list administrator.
-%else%
-  - %wrap%Unsubscribe by emailing: $list+$unsubscribe-digest@$domain$
 %endif%
 %endif%
 
@@ -44,16 +34,17 @@ It has the following versions:
 %else%
   - %wrap%Subscribe by emailing: $list+$subscribe-nomail@$domain$
 %endif%
-%ifcontrol closedlist%
-  - Unsubscribe by contacting a list administrator.
-%else%
-  - %wrap%Unsubscribe by emailing: $list+$unsubscribe-nomail@$domain$
-%endif%
 %endif%
 
 %ifcontrol submod%
 The list has gatekeepers who will review subscription requests before
 permitting new members.
+%endif%
+
+%ifcontrol closedlist%
+Unsubscribe by contacting a list administrator.
+%else%
+%wrap%Unsubscribe by emailing: $list+$unsubscribe@$domain$
 %endif%
 
 Posts are made by emailing $list$@$domain$

@@ -12,11 +12,7 @@
   %ifreason confirm%
     Thank you for confirming your unsubscribe.
   %endif%
-  You have now been removed from
-  %iftype normal%%endif%
-  %iftype digest% the digest version of %endif%
-  %iftype nomail% the no-mail version of %endif%
-  the list.
+  You have now been removed from the list.
 %endif%
 
 %ifaction release%

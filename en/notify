@@ -5,11 +5,11 @@
 
 %ifaction sub%
 %wrap%
-  The address $subaddr$ has been subscribed to
-  %iftype normal%%endif%
-  %iftype digest% the digest version of %endif%
-  %iftype nomail% the no-mail version of %endif%
-  the list
+  The address $subaddr$ has been subscribed to the
+  %iftype normal% normal %endif%
+  %iftype digest% digest %endif%
+  %iftype nomail% no-mail %endif%
+  version of the list
   %ifreason request%
     because a request to join was received.
   %endif%
