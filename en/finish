@@ -40,14 +40,15 @@
 %ifaction post%
 %wrap%
   %ifreason confirm%
-    Thank you for confirming your post.
+    Thank you for confirming
   %endif%
   %ifreason release%
-    A moderator has released your post.
+    A moderator has released
   %endif%
   %ifreason request%
-    Thank you for your post.
+    Thank you for
   %endif%
+  your post with subject "$subject$".
   It is now being distributed to the list.
 %endif%
 

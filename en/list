@@ -5,15 +5,12 @@ Subject: Subscribers to $list$@$domain$
 %wrap%Here is the list of subscribers
 %iftype all%
 (to all versions of the list):
-%endif%
-%iftype normal%
-to the normal version of the list:
-%endif%
-%iftype digest%
-to the digest version of the list:
-%endif%
-%iftype nomail%
-to the no-mail version of the list:
+%else%
+to the
+%iftype normal% normal %endif%
+%iftype digest% digest %endif%
+%iftype nomail% no-mail %endif%
+version of the list:
 %endif%
 
 %subs%
