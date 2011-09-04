@@ -18,13 +18,13 @@
 %ifaction release%
 %wrap%
   You have successfully released the message from $posteraddr$ with subject
-  "$subject" to the list.
+  "$subject$" to the list.
 %endif%
 
 %ifaction reject%
 %wrap%
   You have successfully rejected the message from $posteraddr$ with subject
-  "$subject".
+  "$subject$".
 %endif%
 
 %ifaction permit%
