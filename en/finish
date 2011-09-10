@@ -12,7 +12,11 @@
   %ifreason confirm%
     Thank you for confirming your unsubscribe.
   %endif%
-  You have now been removed from the list.
+  %ifreason admin%
+    An administrator has removed you from the list.
+  %else%
+    You have now been removed from the list.
+  %endif%
 %endif%
 
 %ifaction release%

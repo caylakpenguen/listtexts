@@ -15,7 +15,11 @@ Subject: Welcome to $list$@$domain$
 %ifreason switch%
   Your subscription has been switched to the
 %else%
-  You have now been added to the
+  %ifreason admin%
+    An administrator has subscribed you to the
+  %else%
+    You have now been added to the
+  %endif%
 %endif%
 %iftype normal% normal %endif%
 %iftype digest% digest %endif%
