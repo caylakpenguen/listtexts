@@ -5,8 +5,13 @@
 
 %ifaction sub%
 %wrap%
-  Somebody (and we hope it was you) has requested that your email address
-  $subaddr$ be added
+  %ifreason admin%
+    An administrator
+  %endif%
+  %ifreason request%
+    Somebody (and we hope it was you)
+  %endif%
+  has requested that your email address $subaddr$ be added
   %iftype normal%
     to the list. This means every time a post is sent to the list, you will
     receive a copy of it.
@@ -27,8 +32,13 @@
 
 %ifaction unsub%
 %wrap%
-  Somebody (and we hope it was you) has requested that the email address
-  $subaddr$ be removed from
+  %ifreason admin%
+    An administrator
+  %endif%
+  %ifreason request%
+    Somebody (and we hope it was you)
+  %endif%
+  has requested that the email address $subaddr$ be removed from
   %iftype normal%%endif%
   %iftype digest% the digest version of %endif%
   %iftype nomail% the no-mail version of %endif%
