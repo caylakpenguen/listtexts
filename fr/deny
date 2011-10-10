@@ -1,7 +1,7 @@
-%ifaction sub%Subject: abonnement à $list$@$domain$%endif% impossible
-%ifaction unsub%Subject: désabonnement de $list$@$domain$%endif% impossible
-%ifaction release reject%Subject: impossible de modérer $list$@$domain$%endif%
-%ifaction permit obstruct%Subject: impossible d'accepter / refuser $list$@$domain$%endif%
+%ifaction sub%Subject: Abonnement à $list$@$domain$%endif% impossible
+%ifaction unsub%Subject: Désabonnement de $list$@$domain$%endif% impossible
+%ifaction release reject%Subject: Impossible de modérer $list$@$domain$%endif%
+%ifaction permit obstruct%Subject: Impossible d'accepter / refuser $list$@$domain$%endif%
 
 %text prologue%
 

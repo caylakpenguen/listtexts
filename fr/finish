@@ -1,7 +1,7 @@
-%ifaction unsub%Subject: au revoir de $list$@$domain$%endif%
+%ifaction unsub%Subject: Au revoir de $list$@$domain$%endif%
 %ifaction release reject%Subject: $list$@$domain$ modérée : $subject$%endif%
 %ifaction permit obstruct%Subject: $list$@$domain$ à accès restreint : $subaddr$%endif%
-%ifaction post%Subject: envoyé à $list$@$domain$ : $subject$%endif%
+%ifaction post%Subject: Envoyé à $list$@$domain$ : $subject$%endif%
 
 %text prologue%
 

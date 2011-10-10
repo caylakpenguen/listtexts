@@ -1,5 +1,5 @@
-%ifaction sub%Subject: inscrit à $list$@$domain$ : $subaddr$%endif%
-%ifaction unsub%Subject: désinscrit de $list$@$domain$ : $subaddr$%endif%
+%ifaction sub%Subject: Inscrit à $list$@$domain$ : $subaddr$%endif%
+%ifaction unsub%Subject: Désinscrit de $list$@$domain$ : $subaddr$%endif%
 
 %text prologue%
 
