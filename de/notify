@@ -1,0 +1,46 @@
+%ifaction sub%Subject: Angemeldet bei $list$@$domain$: $subaddr$%endif%
+%ifaction unsub%Subject: Abgemeldet von $list$@$domain$: $subaddr$%endif%
+
+%text prologue%
+
+%ifaction sub%
+%wrap%
+  Die Adresse $subaddr$ wurde bei der
+  %iftype normal% Normalversion %endif%
+  %iftype digest% Digest-Version %endif%
+  %iftype nomail% No-Mail-Version %endif%
+  der Liste angemeldet
+  %ifreason request%
+    da ein Anmeldeantrag vorlag.
+  %endif%
+  %ifreason confirm%
+    da ein Anmeldeantrag bestätigt wurde.
+  %endif%
+  %ifreason admin%
+    da ein Administrator die Anmeldung durchgeführt hat.
+  %endif%
+  %ifreason permit%
+    da die Anmeldung von einem Moderator zugelassen wurde.
+  %endif%
+%endif%
+
+%ifaction unsub%
+%wrap%
+  Die Adresse $subaddr$ wurde von der
+  %iftype normal%%endif%
+  %iftype digest% Digest-Version der %endif%
+  %iftype nomail% No-Mail-Version der %endif%
+  Liste abgemeldet,
+  %ifreason request%
+    da ein Abmeldeantrag vorlag.
+  %endif%
+  %ifreason confirm%
+    da eine Abmeldebestätigung vorlag.
+  %endif%
+  %ifreason admin%
+    da sie durch einen Administrator durchgeführt wurde.
+  %endif%
+  %ifreason bouncing%
+    da Zustellversuche an diese Adresse zu lange erfolglos blieben.
+  %endif%
+%endif%

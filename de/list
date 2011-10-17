@@ -1,0 +1,16 @@
+Subject: Abonnenten der Liste $list$@$domain$
+
+%text prologue%
+
+%wrap%Liste der Abonnenten:
+%iftype all%
+(für alle Versionen der Liste):
+%else%
+für die
+%iftype normal% Normalversion %endif%
+%iftype digest% Digest-Version %endif%
+%iftype nomail% No-Mail-Version %endif%
+der Liste:
+%endif%
+
+%subs%
