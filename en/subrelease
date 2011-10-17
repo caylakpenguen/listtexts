@@ -7,7 +7,7 @@
     %ifncontrol nodigestsub%
 %wrap%
       Or you can simultaneously subscribe to the digest version of the list
-      and release your post by sending a message to $nomailsubreleaseaddr$
+      and release your post by sending a message to $digestsubreleaseaddr$
       and you will receive multiple posts in a single message, at regular
       intervals, or when a lot of posts have accumulated.
     %endif%

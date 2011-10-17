@@ -7,7 +7,7 @@
     %ifncontrol nodigestsub%
 %wrap%
       O puoi iscriverti alla versione digest della lista e contemporaneamente
-      rilasciare il tuo messaggio inviandone uno a $nomailsubreleaseaddr$;
+      rilasciare il tuo messaggio inviandone uno a $digestsubreleaseaddr$;
       riceverai così più messaggi in un singolo messaggio, a intervalli
       regolari o quando se ne sono accumulati un po'.
     %endif%
