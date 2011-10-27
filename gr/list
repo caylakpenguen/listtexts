@@ -1,0 +1,16 @@
+Θέμα: Εγγεγραμμένα μέλη στη λίστα ταχυδρομείου $list$@$domain$
+
+%text prologue%
+
+%wrap%Μέλη της λίστας ταχυδρομείου
+%iftype all%
+(σε όλες τις κατηγορίες συμμετοχής):
+%else%
+
+%iftype normal% με κανονική συμμετοχή : %endif%
+%iftype digest% που λαμβάνουν συγκεντρωτικές ενημερώσεις : %endif%
+%iftype nomail% χωρίς αποστολή ενημερώτικών email (nomail subscription): %endif%
+%endif%
+
+%subs%
+
