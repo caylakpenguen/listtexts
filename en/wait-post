@@ -23,7 +23,7 @@ because of an access rule.
 because you are not a subscriber.
 
   %ifncontrol closedlist%%ifncontrol closedlistsub%
-    %text subrelease%
+    %^%%text subrelease%
   %endif%%endif%
 %endif%
 

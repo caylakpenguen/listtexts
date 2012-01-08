@@ -32,17 +32,17 @@ to be delivered to the list
   because you are not a list subscriber.
 
   %ifncontrol closedlist%%ifncontrol closedlistsub%
-    %text subrelease%
+    %^%%text subrelease%
   %endif%%endif%
 
   %ifcontrol closedlist closedlistsub%
-%wrap%
+    %^%%wrap%
     If you wish to become a subscriber, you will need to contact a list
     administrator. You can email $list+$owner@$domain$ to contact the list
     owner.
   %endif%
 
-%wrap%
+  %^%%wrap%
   If you believe you are a subscriber, you are probably subscribed with a
   different email address. To find out which address you are subscribed
   with, refer to the message welcoming you to the list, or look at the

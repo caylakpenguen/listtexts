@@ -4,7 +4,7 @@
 %text prologue%
 
 %ifaction sub%
-%wrap%
+  %^%%wrap%
   The address $subaddr$ has been subscribed to the
   %iftype normal% normal %endif%
   %iftype digest% digest %endif%
@@ -25,7 +25,7 @@
 %endif%
 
 %ifaction unsub%
-%wrap%
+  %^%%wrap%
   The address $subaddr$ has been unsubscribed from
   %iftype normal%%endif%
   %iftype digest% the digest version of %endif%

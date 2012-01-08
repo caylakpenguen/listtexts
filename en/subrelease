@@ -1,11 +1,11 @@
-%wrap%
+    %^%%wrap%
     However, this is an open list. If you wish, you can simultaneously
     subscribe and release your post by sending a message to
     $listsubreleaseaddr$ which can usually be done simply by replying to
     this message. The subject and the body of the message can be anything.
 
     %ifncontrol nodigestsub%
-%wrap%
+      %^%%wrap%
       Or you can simultaneously subscribe to the digest version of the list
       and release your post by sending a message to $digestsubreleaseaddr$
       and you will receive multiple posts in a single message, at regular
@@ -13,7 +13,7 @@
     %endif%
 
     %ifncontrol nonomailsub%
-%wrap%
+      %^%%wrap%
       Or you can simultaneously subscribe to the no-mail version of the list
       and release your post by sending a message to $nomailsubreleaseaddr$
       and you will not receive posts sent to the list. This means you

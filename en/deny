@@ -6,7 +6,7 @@
 %text prologue%
 
 %ifaction sub%
-%wrap%
+  %^%%wrap%
   You were unable to be subscribed to the list
   %ifreason disabled%
     because the
@@ -30,12 +30,12 @@
 %endif%
 
 %ifaction unsub%
-%wrap%
+  %^%%wrap%
   You were unable to be unsubscribed from the list
   %ifreason unsubbed%
     because you are not subscribed.
 
-%wrap%
+    %^%%wrap%
     If you are receiving messages, perhaps a different email address is
     subscribed. To find out which address you are subscribed with, refer to
     the message welcoming you to the list, or look at the envelope
@@ -44,7 +44,7 @@
 %endif%
 
 %ifaction release reject%
-%wrap%
+  %^%%wrap%
   %ifaction release%
     You were unable to release the specified post to the list
   %endif%
@@ -61,7 +61,7 @@
 %endif%
 
 %ifaction permit obstruct%
-%wrap%
+  %^%%wrap%
   %ifaction permit%
     You were unable to permit the specified subscription request
   %endif%

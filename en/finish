@@ -6,7 +6,7 @@
 %text prologue%
 
 %ifaction unsub%
-%wrap%
+  %^%%wrap%
   %ifreason request%
   %endif%
   %ifreason confirm%
@@ -20,29 +20,29 @@
 %endif%
 
 %ifaction release%
-%wrap%
+  %^%%wrap%
   You have successfully released the message from $posteraddr$ with subject
   "$subject$" to the list.
 %endif%
 
 %ifaction reject%
-%wrap%
+  %^%%wrap%
   You have successfully rejected the message from $posteraddr$ with subject
   "$subject$".
 %endif%
 
 %ifaction permit%
-%wrap%
+  %^%%wrap%
   You have successfully permitted $subaddr$ to join the list.
 %endif%
 
 %ifaction obstruct%
-%wrap%
+  %^%%wrap%
   You have successfully obstructed $subaddr$ from joining the list.
 %endif%
 
 %ifaction post%
-%wrap%
+  %^%%wrap%
   %ifreason confirm%
     Thank you for confirming
   %endif%
