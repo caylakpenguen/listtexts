@@ -61,8 +61,8 @@ Content-Transfer-Encoding: 8bit
 Content-Disposition: inline; filename="message.eml"
 
 %ifreason maxmailsize%
-$originalmail100$
+%originalmail 300%
 %else%
-$originalmail1000000000$
+%originalmail%
 %endif%
 --=_$random0$$random1$_=--
