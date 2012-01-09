@@ -26,7 +26,7 @@ Subject: Welcome to $list$@$domain$
 %iftype nomail% no-mail %endif%
 version of the list.
 
-The email address you are subscribed with is $reqaddr$.
+The email address you are subscribed with is $subaddr$.
 
 %ifcontrol closedlist%
   %^%%wrap%
