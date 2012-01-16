@@ -13,5 +13,13 @@ to the
 version of the list:
 %endif%
 
-%subs%
+%iftype all normal%
+- %listsubs%
+%endif%
+%iftype all digest%
+- %digestsubs%
+%endif%
+%iftype all nomail%
+- %nomailsubs%
+%endif%
 
