@@ -10,7 +10,7 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%The message from $posteraddr$ with subject "$subject" was unable
+%wrap%The message from $posteraddr$ with subject "$subject$" was unable
 to be delivered to the list
 %ifreason maxmailsize%
   because it exceeded the maximum allowed message size of $maxmailsize$
