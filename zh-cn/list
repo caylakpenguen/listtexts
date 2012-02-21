@@ -13,5 +13,12 @@ Subject: $list$@$domain$ 的订阅者列表
 版本的订阅者:
 %endif%
 
-%subs%
-
+%iftype all normal%
+- %listsubs%
+%endif%
+%iftype all digest%
+- %digestsubs%
+%endif%
+%iftype all nomail%
+- %nomailsubs%
+%endif%

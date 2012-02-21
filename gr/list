@@ -12,5 +12,12 @@
 %iftype nomail% χωρίς αποστολή ενημερώτικών email (nomail subscription): %endif%
 %endif%
 
-%subs%
-
+%iftype all normal%
+- %listsubs%
+%endif%
+%iftype all digest%
+- %digestsubs%
+%endif%
+%iftype all nomail%
+- %nomailsubs%
+%endif%

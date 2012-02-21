@@ -10,7 +10,7 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Viestiä osoitteesta $posteraddr$ otsikolla "$subject" ei voitu
+%wrap%Viestiä osoitteesta $posteraddr$ otsikolla "$subject$" ei voitu
 välittää postituslistalle,
 %ifreason maxmailsize%
   koska sen koko on suurempi kuin suurin sallittu koko $maxmailsize$
@@ -65,8 +65,8 @@ Content-Transfer-Encoding: 8bit
 Content-Disposition: inline; filename="message.eml"
 
 %ifreason maxmailsize%
-$originalmail100$
+%originalmail 300%
 %else%
-$originalmail1000000000$
+%originalmail%
 %endif%
 --=_$random0$$random1$_=--

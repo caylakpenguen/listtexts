@@ -26,7 +26,7 @@ Subject: 欢迎加入 $list$@$domain$
 %iftype nomail% 无邮件 %endif%
 版本。
 
-您订阅所用的电子邮箱地址为 $reqaddr$。
+您订阅所用的电子邮箱地址为 $subaddr$。
 
 %ifcontrol closedlist%
 %wrap%

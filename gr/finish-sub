@@ -25,7 +25,7 @@ Subject: Καλωσορίσατε στη $list$@$domain$
 %iftype digest% μέλος με λήψη συνοπτικών περιλήψεων των νέων μηνυμάτων. %endif%
 %iftype nomail% μέλος χωρίς λήψη των μηνυμάτων άλλων χρηστών (nomail subscription). %endif%
 
-Η διεύθυνση email με την οποία έχετε εγγραφεί είναι η $reqaddr$.
+Η διεύθυνση email με την οποία έχετε εγγραφεί είναι η $subaddr$.
 
 %ifcontrol closedlist%
 %wrap%

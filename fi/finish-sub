@@ -25,7 +25,7 @@ Subject: Tervetuloa postituslistalle $list$@$domain$
 %iftype digest% postituslistan viestikoosteiden tilaajaksi. %endif%
 %iftype nomail% postituslistan jäseneksi ilman viestien jakelua. %endif%
 
-Osoite, joka postituslistalle on liitetty, on $reqaddr$.
+Osoite, joka postituslistalle on liitetty, on $subaddr$.
 
 %ifcontrol closedlist%
 %wrap%

@@ -33,5 +33,5 @@ Content-Type: message/rfc822
 Content-Transfer-Encoding: 8bit
 Content-Disposition: inline; filename="message.eml"
 
-$originalmail1000000000$
+%originalmail%
 --=_$random0$$random1$_=--

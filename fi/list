@@ -11,5 +11,12 @@ kaikista tilaajista:
 %iftype nomail% jäsenistä, joille ei välitetä postia: %endif%
 %endif%
 
-%subs%
-
+%iftype all normal%
+- %listsubs%
+%endif%
+%iftype all digest%
+- %digestsubs%
+%endif%
+%iftype all nomail%
+- %nomailsubs%
+%endif%

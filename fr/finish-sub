@@ -26,7 +26,7 @@ Subject: Bienvenue à $list$@$domain$
 %iftype nomail% no-mail %endif%
 de la liste.
 
-L'adresse e-mail avec laquelle vous avez été inscrit est $reqaddr$.
+L'adresse e-mail avec laquelle vous avez été inscrit est $subaddr$.
 
 %ifcontrol closedlist%
 %wrap%

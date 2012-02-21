@@ -22,4 +22,3 @@ version of the list:
 %iftype all nomail%
 - %nomailsubs%
 %endif%
-
