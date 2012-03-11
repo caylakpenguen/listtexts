@@ -1,7 +1,7 @@
-%ifaction unsub%Θέμα: Αποχαιρετισμός από τη $list$@$domain$%endif%
-%ifaction release reject%Θέμα: Διαχείριση $list$@$domain$: $subject$%endif%
-%ifaction permit obstruct%Θέμα: Προστασία $list$@$domain$: $subaddr$%endif%
-%ifaction post%Θέμα: Εμφάνιση μύνηματος στη $list$@$domain$: $subject$%endif%
+%ifaction unsub%Subject: Αποχαιρετισμός από τη $list$@$domain$%endif%
+%ifaction release reject%Subject: Διαχείριση $list$@$domain$: $subject$%endif%
+%ifaction permit obstruct%Subject: Προστασία $list$@$domain$: $subaddr$%endif%
+%ifaction post%Subject: Εμφάνιση μύνηματος στη $list$@$domain$: $subject$%endif%
  
 %text prologue%
 

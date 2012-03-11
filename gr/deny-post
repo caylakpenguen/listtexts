@@ -1,4 +1,4 @@
-Θέμα : Το μήνυμα με θέμα $subject$ απορρίφθηκε απο τη $list$@$domain$:
+Subject: Το μήνυμα με θέμα $subject$ απορρίφθηκε απο τη $list$@$domain$:
 MIME-Version: 1.0
 Content-Type: multipart/mixed;
  boundary="=_$random0$$random1$_="

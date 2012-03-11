@@ -1,5 +1,5 @@
-%ifaction sub%Θέμα : Επιβεβαίωση εγγραφής στη $list$@$domain$%endif%
-%ifaction unsub%Θέμα : Επιβεβαίωση διαγραφής από τη $list$@$domain$%endif%
+%ifaction sub%Subject: Επιβεβαίωση εγγραφής στη $list$@$domain$%endif%
+%ifaction unsub%Subject: Επιβεβαίωση διαγραφής από τη $list$@$domain$%endif%
 
 %text prologue%
 

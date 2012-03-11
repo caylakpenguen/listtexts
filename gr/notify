@@ -1,5 +1,5 @@
-%ifaction sub%Θέμα: Εγγραφή στη λίστα $list$@$domain$: $subaddr$%endif%
-%ifaction unsub%Θέμα: Διαγραφή από τη λίστα $list$@$domain$: $subaddr$%endif%
+%ifaction sub%Subject: Εγγραφή στη λίστα $list$@$domain$: $subaddr$%endif%
+%ifaction unsub%Subject: Διαγραφή από τη λίστα $list$@$domain$: $subaddr$%endif%
 
 %text prologue%
 

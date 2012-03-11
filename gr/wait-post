@@ -1,4 +1,4 @@
-Θέμα: Μήνυμα που εκκρεμεί για τη λίστα ταχυδρομείου $list$@$domain$: $subject$
+Subject: Μήνυμα που εκκρεμεί για τη λίστα ταχυδρομείου $list$@$domain$: $subject$
 MIME-Version: 1.0
 Content-Type: multipart/mixed;
  boundary="=_$random0$$random1$_="

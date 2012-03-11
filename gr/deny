@@ -1,7 +1,7 @@
-%ifaction sub%Θέμα: Αδυναμία εγγραφής στη $list$@$domain$%endif%
-%ifaction unsub%Θέμα: Αδυναμία διαγραφής από $list$@$domain$%endif%
-%ifaction release reject%Θέμα: Αδυναμία διαχείρισης της $list$@$domain$%endif%
-%ifaction permit obstruct%Θέμα: Αδυναμία ελέγχου της $list$@$domain$%endif%
+%ifaction sub%Subject: Αδυναμία εγγραφής στη $list$@$domain$%endif%
+%ifaction unsub%Subject: Αδυναμία διαγραφής από $list$@$domain$%endif%
+%ifaction release reject%Subject: Αδυναμία διαχείρισης της $list$@$domain$%endif%
+%ifaction permit obstruct%Subject: Αδυναμία ελέγχου της $list$@$domain$%endif%
 
 %text prologue%
 
