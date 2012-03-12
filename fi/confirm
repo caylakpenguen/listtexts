@@ -42,9 +42,7 @@
     Joku (toivottavasti sinä)
   %endif%
   on pyytänyt, että sähköpostiosoite <$subaddr$> poistettaisiin
-  %iftype normal% postituslistan vastaanottajista.%endif%
-  %iftype digest% postituslistan viestikoosteiden vastaanottajista.%endif%
-  %iftype nomail% postituslistalta (viestien välitys ei käytössä).%endif%
+  postituslistan.
 %endif%
 
 %wrap%Vahvistaaksesi toimenpiteen lähetä viesti osoitteeseen <$confaddr$>

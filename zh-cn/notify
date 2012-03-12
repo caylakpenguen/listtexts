@@ -38,10 +38,6 @@
   %ifreason bouncing%
     由于退回过久\=，
   %endif%
-  地址 <$subaddr$> 已成功从本列表
-  %iftype normal%%endif%
-  %iftype digest%的汇总版本%endif%
-  %iftype nomail%的无邮件版本%endif%
-  退订\=。
+  地址 <$subaddr$> 已成功从本列表退订\=。
 %endif%
 

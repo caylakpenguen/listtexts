@@ -34,11 +34,7 @@
   %ifreason request%
     有人（\=但愿是您\=）
   %endif%
-  请求将您的电子邮箱地址 <$subaddr$> 从列表
-  %iftype normal%%endif%
-  %iftype digest%的汇总版%endif%
-  %iftype nomail%的无邮件版%endif%
-  移除\=。
+  请求将您的电子邮箱地址 <$subaddr$> 从列表移除\=。
 %endif%
 
 %wrap%要确认是您的请求\=，请发邮件到 <$confaddr$> （\=通常可直接回复本邮

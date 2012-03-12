@@ -24,11 +24,7 @@
 %endif%
 
 %ifaction unsub%
-  %^%%wrap%The address <$subaddr$> has been unsubscribed from
-  %iftype normal%%endif%
-  %iftype digest% the digest version of %endif%
-  %iftype nomail% the no-mail version of %endif%
-  the list
+  %^%%wrap%The address <$subaddr$> has been unsubscribed from the list
   %ifreason request%
     because a request to unsubscribe was received.
   %endif%

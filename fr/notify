@@ -24,11 +24,7 @@
 %endif%
 
 %ifaction unsub%
-  %^%%wrap%L'adresse <$subaddr$> a été désinscrite de
-  %iftype normal%%endif%
-  %iftype digest% la version digest de %endif%
-  %iftype nomail% la version no-mail de %endif%
-  la liste
+  %^%%wrap%L'adresse <$subaddr$> a été désinscrite de la liste
   %ifreason request%
     parce qu'une demande de désinscription a été reçue.
   %endif%

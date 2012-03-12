@@ -24,11 +24,7 @@
 %endif%
 
 %ifaction unsub%
-  %^%%wrap%L'indirizzo <$subaddr$> è stato rimosso dalla versione
-  %iftype normal%%endif%
-  %iftype digest% digest %endif%
-  %iftype nomail% no-mail %endif%
-  della lista
+  %^%%wrap%L'indirizzo <$subaddr$> è stato rimosso della lista
   %ifreason request%
     perché è stata ricevuta una richiesta di rimozione.
   %endif%

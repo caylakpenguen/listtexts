@@ -43,9 +43,6 @@
     Κάποιος (και ελπίζουμε πως είστε εσείς)
   %endif%
   κατέθεσε αίτημα για την διαγραφή της email διεύθυνσης <$subaddr$>
-  %iftype normal%%endif%
-  %iftype digest% the digest version of %endif%
-  %iftype nomail% the no-mail version of %endif%
   από τους παραλήπτες της λίστας ταχυδρομείου.
 %endif%
 

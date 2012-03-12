@@ -38,11 +38,7 @@
   %ifreason request%
     Somebody (and we hope it was you)
   %endif%
-  has requested that the email address <$subaddr$> be removed from
-  %iftype normal%%endif%
-  %iftype digest% the digest version of %endif%
-  %iftype nomail% the no-mail version of %endif%
-  the list.
+  has requested that the email address <$subaddr$> be removed from the list.
 %endif%
 
 %wrap%To confirm you want to do this, please send a message to <$confaddr$>

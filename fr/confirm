@@ -38,11 +38,8 @@
   %ifreason request%
     Quelqu'un (et nous espérons que c'est vous)
   %endif%
-  a demandé à ce que l'adresse e-mail <$subaddr$> soit supprimée de
-  %iftype normal%%endif%
-  %iftype digest% la version digest de %endif%
-  %iftype nomail% la version no-mail de %endif%
-  la liste.
+  a demandé à ce que l'adresse e-mail <$subaddr$> soit supprimée de la
+  liste.
 %endif%
 
 %wrap%Pour confirmer que vous voulez faire cela, veuillez envoyer un message

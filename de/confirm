@@ -31,7 +31,7 @@
   %endif%
 %endif%
 
-%ifaction sub%
+%ifaction unsub%
   %^%%wrap%
   %ifreason admin%
     Ein Listenadministrator
@@ -39,11 +39,8 @@
   %ifreason request%
     Jemand (hoffentlich Sie selbst)
   %endif%
-  hat eine Löschung der Mitgliedschaft Ihrer Mailadresse <$subaddr$>
-  %iftype normal% von der Liste %endif%
-  %iftype digest% vom Digest-Modus der Liste %endif%
-  %iftype nomail% von der No-Mail-Version der Liste %endif%
-  beantragt.
+  hat eine Löschung der Mitgliedschaft Ihrer Mailadresse <$subaddr$> von der
+  Liste beantragt.
 %endif%
 
 %wrap%Um sicher zu stellen, dass Sie das wirklich wollen, senden Sie eine

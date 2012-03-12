@@ -39,11 +39,7 @@
     Qualcuno (che speriamo sia tu)
   %endif%
   ha richiesto la rimozione dell'indirizzo di posta elettronica <$subaddr$>
-  dalla
-  %iftype normal%%endif%
-  %iftype digest% versione digest della %endif%
-  %iftype nomail% versione no-mail della %endif%
-  lista.
+  dalla lista.
 %endif%
 
 %wrap%Per confermare l'azione, invia un messaggio a <$confaddr$>, tale

@@ -24,11 +24,7 @@
 %endif%
 
 %ifaction unsub%
-  %^%%wrap%Die Adresse <$subaddr$> wurde von der
-  %iftype normal%%endif%
-  %iftype digest% Digest-Version der %endif%
-  %iftype nomail% No-Mail-Version der %endif%
-  Liste abgemeldet,
+  %^%%wrap%Die Adresse <$subaddr$> wurde von der Liste abgemeldet,
   %ifreason request%
     da ein Abmeldeantrag vorlag.
   %endif%
