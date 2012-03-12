@@ -10,7 +10,7 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Viestiä osoitteesta $posteraddr$ otsikolla "$subject$" ei voitu
+%wrap%Viestiä osoitteesta <$posteraddr$> otsikolla "$subject$" ei voitu
 välittää postituslistalle,
 %ifreason maxmailsize%
   koska sen koko on suurempi kuin suurin sallittu koko $maxmailsize$
@@ -40,7 +40,7 @@ välittää postituslistalle,
   %ifcontrol closedlist closedlistsub%
     %^%%wrap%Jos haluta liittyä postituslistalle, ota yhteyttä listan
     ylläpitäjään. Ylläpitäjään saat yhteyden lähettämällä sähköpostia
-    osoitteeseen $list+$owner@$domain$.
+    osoitteeseen <$list+$owner@$domain$>.
   %endif%
 
   %^%%wrap%Jos tiedät olevasi tämän postituslistan tilaaja, olet

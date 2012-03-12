@@ -10,7 +10,7 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Το μήνυμα με αποστολέα $posteraddr$ και θέμα "$subject$" πρέπει να
+%wrap%Το μήνυμα με αποστολέα <$posteraddr$> και θέμα "$subject$" πρέπει να
 ελεγχθεί πριν τη δημοσίευσή του
 %ifreason modnonsubposts%
   καθώς ο αποστολέας του μηνύματος δεν είναι εγγεγραμμένος στη λίστα.
@@ -25,21 +25,21 @@ Content-Transfer-Encoding: 8bit
 Ακολουθεί το μήνυμα.
 
 %wrap%Για να αποδεχθείτε το μήνυμα αυτό, αρκεί η αποστολή ενός μηνύματος στη
-διεύθυνση $releaseaddr$, επιλέγοντας "Απάντηση".
+διεύθυνση <$releaseaddr$>, επιλέγοντας "Απάντηση".
 
 %ifcontrol subonrelease%
   %^%%wrap%Για να εγγράψετε παράλληλα τον αποστολέα ως μέλος στη λίστα με
   την παράλληλη αποδοχή του μηνύματος αρκεί ένα μήνυμα στις παρακάτω
   διευθύνσεις\ :%nowrap%
-  %^%- %wrap%Κανονική εγγραφή\ : $listsubreleaseaddr$%nowrap%
+  %^%- %wrap%Κανονική εγγραφή\ : <$listsubreleaseaddr$>%nowrap%
   %^%- %wrap%Εγγραφή με λήψη συγκεντρωτικών μηνυμάτων (digest version):
-  $digestsubreleaseaddr$%nowrap%
+  <$digestsubreleaseaddr$>%nowrap%
   %^%- %wrap%Εγγραφή χωρίς λήψη μηνυμάτων. (no-mail version):
-  $nomailsubreleaseaddr$%nowrap%
+  <$nomailsubreleaseaddr$>%nowrap%
 %endif%
 
 %wrap%Αν δεν επιθυμείτε να κάνετε τίποτα από τα παραπάνω τότε στείλτε ένα
-μήνυμα στο $rejectaddr$ ή απλά αγνοήστε το μήνυμα αυτό.
+μήνυμα στο <$rejectaddr$> ή απλά αγνοήστε το μήνυμα αυτό.
 
 Το μήνυμα αυτό απεστάλη στους παρακάτω διαχειριστές :
 - %moderators%

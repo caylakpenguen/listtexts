@@ -27,19 +27,19 @@ Subject: Benvenuto/a in $list$@$domain$
 della lista.
 
 %wrap%L'indirizzo di posta elettronica con cui ti sei iscritto/a è
-$subaddr$.
+<$subaddr$>.
 
 %ifcontrol closedlist%
   %^%%wrap%Se desideri ancora rimuovere l'iscrizione, dovrai contattare un
-  amministratore della lista. Invia un messaggio a $list+$owner@$domain$ per
-  contattarlo.
+  amministratore della lista. Invia un messaggio a <$list+$owner@$domain$>
+  per contattarlo.
 %else%
   %^%%wrap%Se desideri ancora rimuovere l'iscrizione, invia un messaggio a
-  $list+$unsubscribe@$domain$ usando questo indirizzo di posta. L'oggetto e
-  il corpo del messaggio possono essere vuoti. Riceverai una conferma o
+  <$list+$unsubscribe@$domain$> usando questo indirizzo di posta. L'oggetto
+  e il corpo del messaggio possono essere vuoti. Riceverai una conferma o
   ulteriori istruzioni.
 %endif%
 
 %wrap%Per ulteriori informazioni e aiuto su questa lista, invia un messaggio
-a $list+$help@$domain$
+a <$list+$help@$domain$>.
 

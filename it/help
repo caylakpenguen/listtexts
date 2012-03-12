@@ -11,7 +11,7 @@ lista, gli iscritti ne ricevono una copia.
 %ifcontrol closedlist closedlistsub%
   Iscriviti contattando un amministratore della lista.
 %else%
-  Iscriviti inviando una e-mail a: $list+$subscribe@$domain$
+  Iscriviti inviando una e-mail a <$list+$subscribe@$domain$>.
 %endif%
 
 %ifncontrol nodigestsub%
@@ -21,7 +21,7 @@ lista, gli iscritti ne ricevono una copia.
   %ifcontrol closedlist closedlistsub%
     Iscriviti contattando un amministratore della lista.
   %else%
-    Iscriviti inviando una e-mail a: $list+$subscribe-digest@$domain$
+    Iscriviti inviando una e-mail a <$list+$subscribe-digest@$domain$>.
   %endif%
 %endif%
 
@@ -34,7 +34,7 @@ lista, gli iscritti ne ricevono una copia.
   %ifcontrol closedlist closedlistsub%
     Iscriviti contattando un amministratore della lista.
   %else%
-    Iscriviti inviando una e-mail a: $list+$subscribe-nomail@$domain$
+    Iscriviti inviando una e-mail a <$list+$subscribe-nomail@$domain$>.
   %endif%
 %endif%
 
@@ -46,11 +46,12 @@ lista, gli iscritti ne ricevono una copia.
 %ifcontrol closedlist%
   %^%%wrap%Rimuovi l'iscrizione contattando un amministratore della lista.
 %else%
-  %^%%wrap%Rimuovi l'iscrizione inviando una e-mail a:
-  $list+$unsubscribe@$domain$
+  %^%%wrap%Rimuovi l'iscrizione inviando una e-mail a
+  <$list+$unsubscribe@$domain$>.
 %endif%
 
-%wrap%I messaggi alla lista vanno inviati tramite e-mail a $list$@$domain$
+%wrap%I messaggi alla lista vanno inviati tramite e-mail a
+<$list$@$domain$>.
 
 %ifcontrol subonlypost%%ifncontrol modnonsubposts%
   %^%%wrap%Solo gli iscritti, tuttavia, possono inviare messaggi alla lista.
@@ -79,13 +80,13 @@ lista, gli iscritti ne ricevono una copia.
     Gli iscritti
   %endif%
   possono ricevere un numero di messaggi N dall'archivio della lista,
-  inviando un messaggio a $list+$get-N@$domain$ (cambiare la lettera N nel
+  inviando un messaggio a <$list+$get-N@$domain$> (cambiare la lettera N nel
   numero di messaggi che si desidera ricevere).
 %endif%%endif%
 
 %^%%wrap%Per ottenere il documento delle domande ricorrenti (FAQ) relative
-alla lista, invia un messaggio a $list+$faq@$domain$
+alla lista, invia un messaggio a <$list+$faq@$domain$>.
 
 %^%%wrap%Per contattare il responsabile della lista, invia un messaggio a
-$list+$owner@$domain$
+<$list+$owner@$domain$>.
 

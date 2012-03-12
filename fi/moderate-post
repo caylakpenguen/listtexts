@@ -10,7 +10,7 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Viesti osoitteesta $posteraddr$ otsikolla "$subject$" on lähetetty
+%wrap%Viesti osoitteesta <$posteraddr$> otsikolla "$subject$" on lähetetty
 listalle välitettäväksi. Sinua pyydetään moderoimaan viesti, koska
 %ifreason modnonsubposts%
   viestin lähettäjä ei ole listan tilaaja.
@@ -24,19 +24,19 @@ listalle välitettäväksi. Sinua pyydetään moderoimaan viesti, koska
 Viesti on luettavissa alla.
 
 %wrap%Salliaksesi viestin välittämisen listalle lähetä viesti osoitteeseen
-$releaseaddr$. Tämän voi tavallisesti tehdä vastaamalla tähän viestiin.
+<$releaseaddr$>. Tämän voi tavallisesti tehdä vastaamalla tähän viestiin.
 
 %ifcontrol subonrelease%
   %^%%wrap%Halutessasi voit viestin hyväksymisen lisäksi liittää lähettäjän
   postituslistalle. Tämä onnistuu lähettämällä viesti yhteen seuraavista
   osoitteista:%nowrap%
-  %^%- %wrap%Tavallinen tilaus: $listsubreleaseaddr$%nowrap%
-  %^%- %wrap%Viestikoosteiden tilaus: $digestsubreleaseaddr$%nowrap%
-  %^%- %wrap%Tilaus ilman viestien välitystä: $nomailsubreleaseaddr$%nowrap%
+  %^%- %wrap%Tavallinen tilaus: <$listsubreleaseaddr$>%nowrap%
+  %^%- %wrap%Viestikoosteiden tilaus: <$digestsubreleaseaddr$>%nowrap%
+  %^%- %wrap%Tilaus ilman viestien välitystä: <$nomailsubreleaseaddr$>%nowrap%
 %endif%
 
 %wrap%Jos et halua viestiä hyväksyttävän, lähetä viesti osoitteeseen
-$rejectaddr$ tai jätä tämä viesti kokonaan huomioimatta.
+<$rejectaddr$> tai jätä tämä viesti kokonaan huomioimatta.
 
 Seuraavat moderaattorit ovat saaneet tämän viestin:
 - %moderators%

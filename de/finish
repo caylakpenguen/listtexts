@@ -20,22 +20,22 @@
 %endif%
 
 %ifaction release%
-  %^%%wrap%Sie haben die Nachricht von $posteraddr$ mit dem Betreff
+  %^%%wrap%Sie haben die Nachricht von <$posteraddr$> mit dem Betreff
   "$subject$" erfolgreich an die Liste weitergeleitet.
 %endif%
 
 %ifaction reject%
-  %^%%wrap%Sie haben die Nachricht von $posteraddr$ mit dem Betreff
+  %^%%wrap%Sie haben die Nachricht von <$posteraddr$> mit dem Betreff
   "$subject$" erfolgreich abgewiesen.
 %endif%
 
 %ifaction permit%
-  %^%%wrap%Sie haben die Listenanmeldung von $subaddr$ erfolgreich
+  %^%%wrap%Sie haben die Listenanmeldung von <$subaddr$> erfolgreich
   zugelassen.
 %endif%
 
 %ifaction obstruct%
-  %^%%wrap%Sie haben die Listenanmeldung von $subaddr$ erfolgreich
+  %^%%wrap%Sie haben die Listenanmeldung von <$subaddr$> erfolgreich
   abgewiesen.
 %endif%
 

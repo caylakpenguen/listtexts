@@ -10,7 +10,7 @@ Subject: $list$@$domain$ 信息
 %ifcontrol closedlist closedlistsub%
   请联系列表管理员订阅\=。
 %else%
-  请发邮件到该地址订阅\=：$list+$subscribe@$domain$
+  请发邮件到该地址订阅\=：<$list+$subscribe@$domain$>。
 %endif%
 
 %ifncontrol nodigestsub%
@@ -19,7 +19,7 @@ Subject: $list$@$domain$ 信息
   %ifcontrol closedlist closedlistsub%
     请联系列表管理员订阅\=。
   %else%
-    请发邮件到该地址订阅\=：$list+$subscribe-digest@$domain$
+    请发邮件到该地址订阅\=：<$list+$subscribe-digest@$domain$>。
   %endif%
 %endif%
 
@@ -30,7 +30,7 @@ Subject: $list$@$domain$ 信息
   %ifcontrol closedlist closedlistsub%
     请联系列表管理员订阅\=。
   %else%
-    请发邮件到该地址订阅\=：$list+$subscribe-nomail@$domain$
+    请发邮件到该地址订阅\=：<$list+$subscribe-nomail@$domain$>。
   %endif%
 %endif%
 
@@ -41,10 +41,10 @@ Subject: $list$@$domain$ 信息
 %ifcontrol closedlist%
   %^%%wrap%请联系列表管理员取消订阅\=。
 %else%
-  %^%%wrap%请发邮件到该地址取消订阅\=：$list+$unsubscribe@$domain$
+  %^%%wrap%请发邮件到该地址取消订阅\=：<$list+$unsubscribe@$domain$>。
 %endif%
 
-%^%%wrap%发帖请寄往 $list$@$domain$
+%^%%wrap%发帖请寄往 <$list$@$domain$>。
 
 %ifcontrol subonlypost%%ifncontrol modnonsubposts%
   %^%%wrap%然而\=，只有订户能在列表中发帖\=。
@@ -70,11 +70,11 @@ Subject: $list$@$domain$ 信息
   %else%
     订户
   %endif%
-  可以通过发邮件到 $list+$get-N@$domain$ （\=将 N 换成所需邮件的序号\=）从
-  列表存档提取邮件序号为 N 的邮件\=。
+  可以通过发邮件到 <$list+$get-N@$domain$> （\=将 N 换成所需邮件的序号\=）
+  从列表存档提取邮件序号为 N 的邮件\=。
 %endif%%endif%
 
-%^%%wrap%您可以发邮件到 $list+$faq@$domain$ 了解本列表的常见问题文档\=。
+%^%%wrap%您可以发邮件到 <$list+$faq@$domain$> 了解本列表的常见问题文档\=。
 
-%^%%wrap%如需联系列表所有者\=，请发邮件到 $list+$owner@$domain$
+%^%%wrap%如需联系列表所有者\=，请发邮件到 <$list+$owner@$domain$>。
 

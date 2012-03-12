@@ -11,7 +11,7 @@ wird, wird eine Kopie an die Abonennten verteilt.
 %ifcontrol closedlist closedlistsub%
   Zum Anmelden kontaktieren Sie bitte den Listenadministrator.
 %else%
-  Zum Anmelden senden Sie eine Mail an: $list+$subscribe@$domain$
+  Zum Anmelden senden Sie eine Mail an <$list+$subscribe@$domain$>.
 %endif%
 
 %ifncontrol nodigestsub%
@@ -21,7 +21,8 @@ wird, wird eine Kopie an die Abonennten verteilt.
   %ifcontrol closedlist closedlistsub%
     Zum Anmelden kontaktieren Sie bitte den Listenadministrator.
   %else%
-    Zum Anmelden senden Sie eine Mail an: $list+$subscribe-digest@$domain$
+    Zum Anmelden senden Sie eine Mail an
+    <$list+$subscribe-digest@$domain$>.
   %endif%
 %endif%
 
@@ -33,7 +34,8 @@ wird, wird eine Kopie an die Abonennten verteilt.
   %ifcontrol closedlist closedlistsub%
     Zum Anmelden kontaktieren Sie bitte den Listenadministrator.
   %else%
-    Zum Anmelden senden Sie eine Mail an: $list+$subscribe-nomail@$domain$
+    Zum Anmelden senden Sie eine Mail an
+    <$list+$subscribe-nomail@$domain$>.
   %endif%
 %endif%
 
@@ -44,10 +46,11 @@ wird, wird eine Kopie an die Abonennten verteilt.
 %ifcontrol closedlist%
   %^%%wrap%Zum Abmelden kontaktieren Sie einen Listenadministrator.
 %else%
-  %^%%wrap%Zum Abmelden senden Sie eine Mail an: $list+$unsubscribe@$domain$
+  %^%%wrap%Zum Abmelden senden Sie eine Mail an
+  <$list+$unsubscribe@$domain$>.
 %endif%
 
-%wrap%Zum Schreiben an die Liste senden Sie eine Mail an $list$@$domain$
+%wrap%Zum Schreiben an die Liste senden Sie eine Mail an <$list$@$domain$>.
 
 %ifcontrol subonlypost%%ifncontrol modnonsubposts%
   %^%%wrap%Es werden jedoch nur Mails von angemeldeten Teilnehmern verteilt.
@@ -76,13 +79,13 @@ wird, wird eine Kopie an die Abonennten verteilt.
     Abonnenten
   %endif%
   können eine Nachricht Nummer N aus dem Listenarchiv nachbestellen, indem
-  sie eine Mail an $list+$get-N@$domain$ schicken (ersetzen Sie N mit der
+  sie eine Mail an <$list+$get-N@$domain$> schicken (ersetzen Sie N mit der
   Nummer der gewünschten Nachricht).
 %endif%%endif%
 
 %wrap%Sie können die FAQ (Liste der häufigen Fragen) durch eine Mail an
-$list+$faq@$domain$ anfordern.
+<$list+$faq@$domain$> anfordern.
 
 %wrap%Zum Kontaktieren des Listeneigentümers senden Sie eine Mail an
-$list+$owner@$domain$
+<$list+$owner@$domain$>.
 

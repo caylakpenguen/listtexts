@@ -11,7 +11,7 @@
   %ifreason request%
     Qualcuno (che speriamo sia tu)
   %endif%
-  ha richiesto l'aggiunta del tuo indirizzo di posta elettronica $subaddr$
+  ha richiesto l'aggiunta del tuo indirizzo di posta elettronica <$subaddr$>
   %iftype normal%
     alla lista. Ciò significa che ogni volta che un messaggio viene inviato
     alla lista, tu ne riceverai una copia.
@@ -38,7 +38,7 @@
   %ifreason request%
     Qualcuno (che speriamo sia tu)
   %endif%
-  ha richiesto la rimozione dell'indirizzo di posta elettronica $subaddr$
+  ha richiesto la rimozione dell'indirizzo di posta elettronica <$subaddr$>
   dalla
   %iftype normal%%endif%
   %iftype digest% versione digest della %endif%
@@ -46,9 +46,9 @@
   lista.
 %endif%
 
-%wrap%Per confermare l'azione, invia un messaggio a $confaddr$, tale azione
-può essere eseguita semplicemente rispondendo al messaggio. L'oggetto e il
-corpo del messaggio possono essere vuoti.
+%wrap%Per confermare l'azione, invia un messaggio a <$confaddr$>, tale
+azione può essere eseguita semplicemente rispondendo al messaggio. L'oggetto
+e il corpo del messaggio possono essere vuoti.
 
 Dopo tale operazione riceverai una risposta che ti informerà della sua
 riuscita.

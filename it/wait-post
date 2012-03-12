@@ -10,7 +10,7 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Il messaggio da $posteraddr$ con oggetto "$subject$" è stato inviato
+%wrap%Il messaggio da <$posteraddr$> con oggetto "$subject$" è stato inviato
 alla lista. Tuttavia, ai moderatori è stato richiesto di controllarlo prima
 di rilasciarlo,
 %ifreason moderated%

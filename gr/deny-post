@@ -10,8 +10,8 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Το μήνυμα με διεύθυνση αποστολέα $posteraddr$ και θέμα "$subject$" δεν
-παραλήφθηκε από τη λίστα ταχυδρομείου
+%wrap%Το μήνυμα με διεύθυνση αποστολέα <$posteraddr$> και θέμα "$subject$"
+δεν παραλήφθηκε από τη λίστα ταχυδρομείου
 %ifreason maxmailsize%
   καθώς ξεπερνά το μέγιστο επιτρεπτό μέγεθος των $maxmailsize$ bytes.
 %endif%
@@ -39,7 +39,7 @@ Content-Transfer-Encoding: 8bit
   %ifcontrol closedlist closedlistsub%
     %^%%wrap%Αν επιθυμείτε να εγγραφείτε στη λίστα ταχυδρομείου, αρκεί να
     ενημερώσετε κάποιον απο τους διαχειριστές της, στέλλοντας email στη
-    διεύθυνση $list+$owner@$domain$.
+    διεύθυνση <$list+$owner@$domain$>.
   %endif%
 
   %^%%wrap%Αν νομίζετε πως είστε ήδη εγγεγραμμένος τότε επιβεβαιώστε πως

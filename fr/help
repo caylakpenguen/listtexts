@@ -11,7 +11,7 @@ liste, les inscrits reçoivent une copie de celui-ci.
 %ifcontrol closedlist closedlistsub%
   Inscrivez-vous en contactant un administrateur de la liste.
 %else%
-  Inscrivez-vous en envoyant un e-mail à\ : $list+$subscribe@$domain$
+  Inscrivez-vous en envoyant un e-mail à <$list+$subscribe@$domain$>.
 %endif%
 
 %ifncontrol nodigestsub%
@@ -21,8 +21,8 @@ liste, les inscrits reçoivent une copie de celui-ci.
   %ifcontrol closedlist closedlistsub%
     Inscrivez-vous en contactant un administrateur de la liste.
   %else%
-    Inscrivez-vous en envoyant un e-mail à\ :
-    $list+$subscribe-digest@$domain$
+    Inscrivez-vous en envoyant un e-mail à
+    <$list+$subscribe-digest@$domain$>.
   %endif%
 %endif%
 
@@ -34,8 +34,8 @@ liste, les inscrits reçoivent une copie de celui-ci.
   %ifcontrol closedlist closedlistsub%
     Inscrivez-vous en contactant un administrateur de la liste.
   %else%
-    Inscrivez-vous en envoyant un e-mail à\ :
-    $list+$subscribe-nomail@$domain$
+    Inscrivez-vous en envoyant un e-mail à
+    <$list+$subscribe-nomail@$domain$>.
   %endif%
 %endif%
 
@@ -47,11 +47,11 @@ liste, les inscrits reçoivent une copie de celui-ci.
 %ifcontrol closedlist%
   %^%%wrap%Désinscrivez-vous en contactant un administrateur de la liste.
 %else%
-  %^%%wrap%Désinscrivez-vous en envoyant un e-mail à\ :
-  $list+$unsubscribe@$domain$
+  %^%%wrap%Désinscrivez-vous en envoyant un e-mail à
+  <$list+$unsubscribe@$domain$>.
 %endif%
 
-%wrap%Les messages sont envoyés à $list$@$domain$
+%wrap%Les messages sont envoyés à <$list$@$domain$>.
 
 %ifcontrol subonlypost%%ifncontrol modnonsubposts%
   %^%%wrap%Cependant, seuls les inscrits peuvent poster sur la liste.
@@ -80,13 +80,13 @@ liste, les inscrits reçoivent une copie de celui-ci.
     Les inscrits
   %endif%
   peuvent retirer le message numéro N des archives de la liste en envoyant
-  un message à $list+$get-N@$domain$ (remplacez le N par le numéro du
+  un message à <$list+$get-N@$domain$> (remplacez le N par le numéro du
   message souhaité).
 %endif%%endif%
 
 %wrap%Vous pouvez obtenir le document contenant les questions fréquemment
-posées pour la liste en envoyant un message à $list+$faq@$domain$
+posées pour la liste en envoyant un message à <$list+$faq@$domain$>.
 
 %wrap%Pour contacter le propriétaire de la liste envoyé un message à
-$list+$owner@$domain$
+<$list+$owner@$domain$>.
 

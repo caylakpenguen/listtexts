@@ -20,21 +20,21 @@
 %endif%
 
 %ifaction release%
-  %^%%wrap%Vous avez délivré avec succès le message de $posteraddr$ ayant
+  %^%%wrap%Vous avez délivré avec succès le message de <$posteraddr$> ayant
   pour sujet "$subject$" à la liste.
 %endif%
 
 %ifaction reject%
-  %^%%wrap%Vous avez rejeté avec succès le message de $posteraddr$ ayant
+  %^%%wrap%Vous avez rejeté avec succès le message de <$posteraddr$> ayant
   pour sujet  "$subject$".
 %endif%
 
 %ifaction permit%
-  %^%%wrap%Vous avez permis à $subaddr$ de rejoindre la liste.
+  %^%%wrap%Vous avez permis à <$subaddr$> de rejoindre la liste.
 %endif%
 
 %ifaction obstruct%
-  %^%%wrap%Vous avez empêché $subaddr$ de rejoindre la liste.
+  %^%%wrap%Vous avez empêché <$subaddr$> de rejoindre la liste.
 %endif%
 
 %ifaction post%

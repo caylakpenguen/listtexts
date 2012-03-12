@@ -11,7 +11,7 @@
   %ifreason request%
     Quelqu'un (et nous espérons que c'est vous)
   %endif%
-  a demandé que votre adresse e-mail $subaddr$ soit ajoutée
+  a demandé que votre adresse e-mail <$subaddr$> soit ajoutée
   %iftype normal%
     à la liste. Cela signifie que chaque fois qu'un message sera envoyé à la
     liste, vous en recevrez une copie
@@ -38,7 +38,7 @@
   %ifreason request%
     Quelqu'un (et nous espérons que c'est vous)
   %endif%
-  a demandé à ce que l'adresse e-mail $subaddr$ soit supprimée de
+  a demandé à ce que l'adresse e-mail <$subaddr$> soit supprimée de
   %iftype normal%%endif%
   %iftype digest% la version digest de %endif%
   %iftype nomail% la version no-mail de %endif%
@@ -46,9 +46,9 @@
 %endif%
 
 %wrap%Pour confirmer que vous voulez faire cela, veuillez envoyer un message
-à $confaddr$ ce qui peut, habituellement, être fait facilement en répondant
-à ce message. Le sujet et le corps du message peuvent contenir n'importe
-quoi.
+à <$confaddr$> ce qui peut, habituellement, être fait facilement en
+répondant à ce message. Le sujet et le corps du message peuvent contenir
+n'importe quoi.
 
 Après cela, vous devriez recevoir un réponse vous informant du succès de
 l'opération. 

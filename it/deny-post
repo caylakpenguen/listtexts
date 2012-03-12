@@ -11,7 +11,7 @@ Content-Transfer-Encoding: 8bit
 %text prologue%
 
 %wrap%Non è stato possibile consegnare alla lista il messaggio da
-$posteraddr$ con oggetto "$subject$"
+<$posteraddr$> con oggetto "$subject$"
 %ifreason maxmailsize%
   perché ha superato la dimensione massima consentita di $maxmailsize$
   byte.
@@ -39,7 +39,7 @@ $posteraddr$ con oggetto "$subject$"
 
   %ifcontrol closedlist closedlistsub%
     %^%%wrap%Se desideri iscriverti, devi contattare l'amministratore della
-    lista. Puoi scrivere a $list+$owner@$domain$ per contattarlo.
+    lista. Puoi scrivere a <$list+$owner@$domain$> per contattarlo.
   %endif%
 
   %^%%wrap%Se sai di essere iscritto/a, probabilmente lo sei con un

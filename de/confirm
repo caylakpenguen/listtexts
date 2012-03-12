@@ -11,7 +11,7 @@
   %ifreason request%
     Jemand (hoffentlich Sie selbst)
   %endif%
-  hat darum gebeten, Ihre Mailadresse $subaddr$
+  hat darum gebeten, Ihre Mailadresse <$subaddr$>
   %iftype normal%
     der Liste hinzuzufügen. Das heißt, dass Sie eine Kopie jeder Mail
     erhalten, die an die Liste geschickt wird.
@@ -39,7 +39,7 @@
   %ifreason request%
     Jemand (hoffentlich Sie selbst)
   %endif%
-  hat eine Löschung der Mitgliedschaft Ihrer Mailadresse $subaddr$
+  hat eine Löschung der Mitgliedschaft Ihrer Mailadresse <$subaddr$>
   %iftype normal% von der Liste %endif%
   %iftype digest% vom Digest-Modus der Liste %endif%
   %iftype nomail% von der No-Mail-Version der Liste %endif%
@@ -47,8 +47,9 @@
 %endif%
 
 %wrap%Um sicher zu stellen, dass Sie das wirklich wollen, senden Sie eine
-Nachricht an $confaddr$, was gewöhnlich durch einfaches Antworten auf diese
-Mail erfolgen kann. Betreff und Text Ihrer Antwort können beliebig sein.
+Nachricht an <$confaddr$>, was gewöhnlich durch einfaches Antworten auf
+diese Mail erfolgen kann. Betreff und Text Ihrer Antwort können beliebig
+sein.
 
 Nach dem Absenden Ihrer Antwortmail sollten Sie eine Antwortnachricht
 erhalten, dass die Operation erfolgreich war.

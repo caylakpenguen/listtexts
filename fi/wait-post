@@ -10,7 +10,7 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Viesti osoitteesta $posteraddr$ otsikolla "$subject$" on lähetetty
+%wrap%Viesti osoitteesta <$posteraddr$> otsikolla "$subject$" on lähetetty
 postituslistalle. Ennen kuin viesti päätyy postituslistalle, moderaattorin
 on hyväksyttävä se,
 %ifreason moderated%

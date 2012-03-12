@@ -11,7 +11,7 @@ subscribers receive a copy of it.
 %ifcontrol closedlist closedlistsub%
   Subscribe by contacting a list administrator.
 %else%
-  Subscribe by emailing: $list+$subscribe@$domain$
+  Subscribe by emailing <$list+$subscribe@$domain$>.
 %endif%
 
 %ifncontrol nodigestsub%
@@ -21,7 +21,7 @@ subscribers receive a copy of it.
   %ifcontrol closedlist closedlistsub%
     Subscribe by contacting a list administrator.
   %else%
-    Subscribe by emailing: $list+$subscribe-digest@$domain$
+    Subscribe by emailing <$list+$subscribe-digest@$domain$>.
   %endif%
 %endif%
 
@@ -33,7 +33,7 @@ subscribers receive a copy of it.
   %ifcontrol closedlist closedlistsub%
     Subscribe by contacting a list administrator.
   %else%
-    Subscribe by emailing: $list+$subscribe-nomail@$domain$
+    Subscribe by emailing <$list+$subscribe-nomail@$domain$>.
   %endif%
 %endif%
 
@@ -45,10 +45,10 @@ subscribers receive a copy of it.
 %ifcontrol closedlist%
   %^%%wrap%Unsubscribe by contacting a list administrator.
 %else%
-  %^%%wrap%Unsubscribe by emailing: $list+$unsubscribe@$domain$
+  %^%%wrap%Unsubscribe by emailing <$list+$unsubscribe@$domain$>.
 %endif%
 
-%wrap%Posts are made by emailing $list$@$domain$
+%wrap%Posts are made by emailing <$list$@$domain$>.
 
 %ifcontrol subonlypost%%ifncontrol modnonsubposts%
   %^%%wrap%However, only subscribers may post to the list.
@@ -77,12 +77,12 @@ subscribers receive a copy of it.
     Subscribers
   %endif%
   can retrieve message number N from the list's archive by sending a message
-  to $list+$get-N@$domain$ (change the N to the number of the desired
+  to <$list+$get-N@$domain$> (change the N to the number of the desired
   message).
 %endif%%endif%
 
 %wrap%You can retrieve the frequently asked questions document for the list
-by sending a message to $list+$faq@$domain$
+by sending a message to <$list+$faq@$domain$>.
 
-%wrap%To contact the list owner, send a message to $list+$owner@$domain$
+%wrap%To contact the list owner, send a message to <$list+$owner@$domain$>.
 

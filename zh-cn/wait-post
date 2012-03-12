@@ -10,7 +10,8 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%来自 $posteraddr$ 题为《\=$subject$\=》的邮件已提交至列表\=。然而\=，
+%wrap%来自 <$posteraddr$> 题为《\=$subject$\=》的邮件已提交至列表\=。然
+而\=，
 %ifreason moderated%
   因为这是先审列表\=，
 %endif%

@@ -10,8 +10,9 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Die Mail von $posteraddr$ mit dem Betreff "$subject$" wurde an die Liste
-eingereicht. Jedoch ist vor der Weiterleitung eine Moderation erforderlich,
+%wrap%Die Mail von <$posteraddr$> mit dem Betreff "$subject$" wurde an die
+Liste eingereicht. Jedoch ist vor der Weiterleitung eine Moderation
+erforderlich,
 %ifreason moderated%
   da es sich um eine moderierte Liste handelt.
 %endif%

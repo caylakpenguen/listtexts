@@ -10,8 +10,8 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Le message de $posteraddr$ ayant pour sujet "$subject$" a été soumis à
-la liste. Cependant il a été demandé aux modérateurs de le contrôler avant
+%wrap%Le message de <$posteraddr$> ayant pour sujet "$subject$" a été soumis
+à la liste. Cependant il a été demandé aux modérateurs de le contrôler avant
 de le délivrer à la liste
 %ifreason moderated%
   parce que c'est une liste modérée.

@@ -11,7 +11,7 @@ tilaajana siitä kopion sähköpostiisi.
 %ifcontrol closedlist closedlistsub%
   Liity ottamalla yhteyttä postituslistan ylläpitäjään.
 %else%
-  Liity lähettämällä viesti osoitteeseen $list+$subscribe@$domain$
+  Liity lähettämällä viesti osoitteeseen <$list+$subscribe@$domain$>.
 %endif%
 
 %ifncontrol nodigestsub%
@@ -21,7 +21,8 @@ tilaajana siitä kopion sähköpostiisi.
   %ifcontrol closedlist closedlistsub%
     Liity ottamalla yhteyttä postituslistan ylläpitäjään.
   %else%
-    Liity lähettämällä viesti osoitteeseen $list+$subscribe-digest@$domain$
+    Liity lähettämällä viesti osoitteeseen
+    <$list+$subscribe-digest@$domain$>.
   %endif%
 %endif%
 
@@ -34,7 +35,8 @@ tilaajana siitä kopion sähköpostiisi.
   %ifcontrol closedlist closedlistsub%
     Liity ottamalla yhteyttä postituslistan ylläpitäjään.
   %else%
-    Liity lähettämällä viesti osoitteeseen $list+$subscribe-nomail@$domain$
+    Liity lähettämällä viesti osoitteeseen
+    <$list+$subscribe-nomail@$domain$>.
   %endif%
 %endif%
 
@@ -47,11 +49,11 @@ tilaajana siitä kopion sähköpostiisi.
   %^%%wrap%Listalta voi poistua ottamalla yhteyttä listan ylläpitäjään.
 %else%
   %^%%wrap%Listalta voi poistua lähettämällä postia osoitteeseen
-  $list+$unsubscribe@$domain$
+  <$list+$unsubscribe@$domain$>.
 %endif%
 
 %wrap%Listalle lähetetään postia lähettämällä viesti osoitteeseen
-$list$@$domain$
+<$list$@$domain$>.
 
 %ifcontrol subonlypost%%ifncontrol modnonsubposts%
   %^%%wrap%Huomaa kuitenkin, että vain listan tilaajat voivat lähettää
@@ -82,12 +84,12 @@ $list$@$domain$
     Listan tilaajat voivat
   %endif%
   hakea viestin numero N listan arkistosta lähettämällä viestin osoitteeseen
-  $list+$get-N@$domain$ (korvaa N halutulla viestin numerolla).
+  <$list+$get-N@$domain$> (korvaa N halutulla viestin numerolla).
 %endif%%endif%
 
 %wrap%Listan usein kysytyt kysymykset vastauksineen voi hakea lähettämällä
-viestin osoitteeseen $list+$faq@$domain$
+viestin osoitteeseen <$list+$faq@$domain$>.
 
 %wrap%Listan ylläpitäjään saa yhteyden lähettämällä postia osoitteeseen
-$list+$owner@$domain$
+<$list+$owner@$domain$>.
 

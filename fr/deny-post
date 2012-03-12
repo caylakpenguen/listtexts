@@ -10,7 +10,7 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Le message de $posteraddr$ ayant pour sujet "$subject$" n'a pas pu
+%wrap%Le message de <$posteraddr$> ayant pour sujet "$subject$" n'a pas pu
 être délivré à la liste
 %ifreason maxmailsize%
   parce qu'il dépassait la taille maximale autorisée de $maxmailsize$
@@ -40,7 +40,7 @@ Content-Transfer-Encoding: 8bit
   %ifcontrol closedlist closedlistsub%
     %^%%wrap%Si vous souhaitez vous inscrire, vous devez contacter un
     administrateur de la liste. Vous pouvez envoyer un e-mail à
-    $list+$owner@$domain$ pour contacter le propriétaire de la liste.
+    <$list+$owner@$domain$> pour contacter le propriétaire de la liste.
   %endif%
 
   %^%%wrap%Si vous pensez être inscrit, vous l'êtes probablement avec une

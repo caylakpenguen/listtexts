@@ -10,7 +10,7 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%The message from $posteraddr$ with subject "$subject$" was unable to
+%wrap%The message from <$posteraddr$> with subject "$subject$" was unable to
 be delivered to the list
 %ifreason maxmailsize%
   because it exceeded the maximum allowed message size of $maxmailsize$
@@ -37,7 +37,7 @@ be delivered to the list
 
   %ifcontrol closedlist closedlistsub%
     %^%%wrap%If you wish to become a subscriber, you will need to contact a
-    list administrator. You can email $list+$owner@$domain$ to contact the
+    list administrator. You can email <$list+$owner@$domain$> to contact the
     list owner.
   %endif%
 

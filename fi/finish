@@ -20,21 +20,21 @@
 %endif%
 
 %ifaction release%
-  %^%%wrap%Osoitteesta $posteraddr$ lähetetty viesti "$subject$" on
+  %^%%wrap%Osoitteesta <$posteraddr$> lähetetty viesti "$subject$" on
   onnistuneesti hyväksytty välitettäväksi postituslistalle.
 %endif%
 
 %ifaction reject%
-  %^%%wrap%Osoitteesta $posteraddr$ lähetetyn viestin "$subject$"
+  %^%%wrap%Osoitteesta <$posteraddr$> lähetetyn viestin "$subject$"
   välittäminen postituslistalle on estetty.
 %endif%
 
 %ifaction permit%
-  %^%%wrap%Osoite $subaddr$ on liitetty postituslistalle.
+  %^%%wrap%Osoite <$subaddr$> on liitetty postituslistalle.
 %endif%
 
 %ifaction obstruct%
-  %^%%wrap%Osoitteen $subaddr$ liittäminen postituslistalle on estetty.
+  %^%%wrap%Osoitteen <$subaddr$> liittäminen postituslistalle on estetty.
 %endif%
 
 %ifaction post%

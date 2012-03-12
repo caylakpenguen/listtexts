@@ -10,7 +10,7 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Ένα μήνυμα με αποστολέα $posteraddr$ και θέμα "$subject$" έχει
+%wrap%Ένα μήνυμα με αποστολέα <$posteraddr$> και θέμα "$subject$" έχει
 υποβληθεί για δημοσίευση στη λίστα. Για να εμφανιστεί πρέπει πρώτα να
 διαβαστεί και να επιβεβαιωθεί από κάποιον διαχειριστή
 %ifreason moderated%

@@ -10,8 +10,8 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%È stato inviato un messaggio da $posteraddr$ con oggetto "$subject$".
-Ti è stato richiesto di moderarlo
+%wrap%È stato inviato un messaggio da <$posteraddr$> con oggetto
+"$subject$". Ti è stato richiesto di moderarlo
 %ifreason modnonsubposts%
   perché il/la richiedente non è un/a iscritto/a.
 %endif%
@@ -23,20 +23,20 @@ Ti è stato richiesto di moderarlo
 %endif%
 Il messaggio è riportato sotto.
 
-%wrap%Per rilasciarlo alla lista, invia un messaggio a $releaseaddr$, che in
-genere si esegue semplicemente rispondendo al questo messaggio.
+%wrap%Per rilasciarlo alla lista, invia un messaggio a <$releaseaddr$>, che
+in genere si esegue semplicemente rispondendo al questo messaggio.
 
 %ifcontrol subonrelease%
   %^%%wrap%Se lo desideri, puoi contemporaneamente rilasciare il messaggio e
   iscrivere il mittente inviando un messaggio a uno dei seguenti
   indirizzi:%nowrap%
-  %^%- %wrap%Versione normale: $listsubreleaseaddr$%nowrap%
-  %^%- %wrap%Versione digest: $digestsubreleaseaddr$%nowrap%
-  %^%- %wrap%Versione no-mail: $nomailsubreleaseaddr$%nowrap%
+  %^%- %wrap%Versione normale: <$listsubreleaseaddr$>%nowrap%
+  %^%- %wrap%Versione digest: <$digestsubreleaseaddr$>%nowrap%
+  %^%- %wrap%Versione no-mail: <$nomailsubreleaseaddr$>%nowrap%
 %endif%
 
 %wrap%Se non vuoi eseguire nulla di tutto ciò, invia un messaggio a
-$rejectaddr$ oppure ignora questo messaggio.
+<$rejectaddr$> oppure ignora questo messaggio.
 
 Questo messaggio è stato ricevuto dai seguenti moderatori:
 - %moderators%

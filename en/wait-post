@@ -10,7 +10,7 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%The message from $posteraddr$ with subject "$subject$" has been
+%wrap%The message from <$posteraddr$> with subject "$subject$" has been
 submitted to the list. However, the moderators are being asked to review it
 before releasing it to the list
 %ifreason moderated%

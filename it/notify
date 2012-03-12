@@ -4,7 +4,7 @@
 %text prologue%
 
 %ifaction sub%
-  %^%%wrap%L'indirizzo $subaddr$ è stato iscritto alla versione
+  %^%%wrap%L'indirizzo <$subaddr$> è stato iscritto alla versione
   %iftype normal% normal %endif%
   %iftype digest% digest %endif%
   %iftype nomail% no-mail %endif%
@@ -24,7 +24,7 @@
 %endif%
 
 %ifaction unsub%
-  %^%%wrap%L'indirizzo $subaddr$ è stato rimosso dalla versione
+  %^%%wrap%L'indirizzo <$subaddr$> è stato rimosso dalla versione
   %iftype normal%%endif%
   %iftype digest% digest %endif%
   %iftype nomail% no-mail %endif%

@@ -4,7 +4,7 @@
 %text prologue%
 
 %ifaction sub%
-  %^%%wrap%Η διεύθυνση $subaddr$ χρησιμοποιήθηκε για εγγραφή 
+  %^%%wrap%Η διεύθυνση <$subaddr$> χρησιμοποιήθηκε για εγγραφή 
   %iftype normal% κανονικού μέλος %endif%
   %iftype digest% μέλους με συγκεντρωτική ενημέρωση %endif%
   %iftype nomail% μέλους χωρίς ενημέρωση %endif%
@@ -24,7 +24,7 @@
 %endif%
 
 %ifaction unsub%
-  %^%%wrap%Η διεύθυνση $subaddr$ διαγράφηκε από  
+  %^%%wrap%Η διεύθυνση <$subaddr$> διαγράφηκε από  
   %iftype normal% την κανονική εκδοχή %endif%
   %iftype digest% την εκδοχή με συγκεντρωτική ενημέρωση %endif%
   %iftype nomail% την εκδοχή χωρίς ενημέρωση %endif%

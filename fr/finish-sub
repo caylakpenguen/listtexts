@@ -26,19 +26,19 @@ Subject: Bienvenue à $list$@$domain$
 %iftype nomail% no-mail %endif%
 de la liste.
 
-%wrap%L'adresse e-mail avec laquelle vous avez été inscrit est $subaddr$.
+%wrap%L'adresse e-mail avec laquelle vous avez été inscrit est <$subaddr$>.
 
 %ifcontrol closedlist%
   %^%%wrap%Si vous souhaitez vous désinscrire, vous devez contacter un
   administrateur de la liste. Vous pouvez envoyer un mail à
-  $list+$owner@$domain$ pour contacter le propriétaire de la liste.
+  <$list+$owner@$domain$> pour contacter le propriétaire de la liste.
 %else%
   %^%%wrap%Si vous souhaitez vous désinscrire, envoyez un message à
-  $list+$unsubscribe@$domain$ en utilisant cette adresse e-mail. Le sujet et
-  le corps du message peuvent contenir n'importe quoi. Vous recevrez ensuite
-  une confirmation ou des instructions complémentaires.
+  <$list+$unsubscribe@$domain$> en utilisant cette adresse e-mail. Le sujet
+  et le corps du message peuvent contenir n'importe quoi. Vous recevrez
+  ensuite une confirmation ou des instructions complémentaires.
 %endif%
 
 %wrap%Pour d'autres informations ou de l'aide à propos de cette liste,
-envoyez un message à $list+$help@$domain$
+envoyez un message à <$list+$help@$domain$>.
 

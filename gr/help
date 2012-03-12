@@ -13,7 +13,7 @@ Subject: Πληροφορίες για τη λίστα $list$@$domain$
   διαχειριστές της λίστας.
 %else%
   Για την εγγραφή στη λίστα αρκεί η αποστολή ενός email στη διεύθυνση\ :
-  $list+$subscribe@$domain$
+  <$list+$subscribe@$domain$>.
 %endif%
 
 %ifncontrol nodigestsub%
@@ -25,7 +25,7 @@ Subject: Πληροφορίες για τη λίστα $list$@$domain$
     διαχειριστές της λίστας.
   %else%
     Για την εγγραφή στη λίστα αρκεί η αποστολή email στη διεύθυνση\ :
-    $list+$subscribe-digest@$domain$
+    <$list+$subscribe-digest@$domain$>.
   %endif%
 %endif%
 
@@ -38,7 +38,7 @@ Subject: Πληροφορίες για τη λίστα $list$@$domain$
     Εγγραφή με επικοινωνία με κάποιον από τους διαχειριστές της λίστας.
   %else%
     Για την εγγραφή στη λίστα αρκεί η αποστολή email στη διεύθυνση\ :
-    $list+$subscribe-nomail@$domain$
+    <$list+$subscribe-nomail@$domain$>.
   %endif%
 %endif%
 
@@ -52,11 +52,11 @@ Subject: Πληροφορίες για τη λίστα $list$@$domain$
   σχετικού μηνύματος σε κάποιον από τους διαχειριστές της.
 %else%
   %^%%wrap%Για τη διαγραφή αρκεί η αποστολή email στο
-  $list+$unsubscribe@$domain$
+  <$list+$unsubscribe@$domain$>.
 %endif%
 
 %wrap%Για τη δημοσίευση ενός μηνύματος αρκεί η αποστολή του στο
-$list$@$domain$
+<$list$@$domain$>.
 
 %ifcontrol subonlypost%%ifncontrol modnonsubposts%
   %^%%wrap%Ωστόσο, μόνο εγγεγραμμένα μέλη έχουν δυνατότητα δημοσίευσης
@@ -87,13 +87,13 @@ $list$@$domain$
     Κάθε εγγεγραμμένος χρήστης
   %endif%
   μπορεί να αναζητήσει το μήνυμα που βρίσκεται στη θέση N στο αρχείο της
-  λίστας, στέλνοντας ένα μήνυμα στη διεύθυνση $list+$get-N@$domain$ (όπου N
-  θα μπει η θέση του μυνήματος).
+  λίστας, στέλνοντας ένα μήνυμα στη διεύθυνση <$list+$get-N@$domain$> (όπου
+  N θα μπει η θέση του μυνήματος).
 %endif%%endif%
 
 %wrap%Για να δείτε τις συχνές ερωτήσεις αρκεί η αποστολή ενός μηνύματος στο
-$list+$faq@$domain$
+<$list+$faq@$domain$>.
 
 %wrap%Για επικοινωνία με τον ιδιοκτήτη της λίστας αρκεί ένα email στο
-$list+$owner@$domain$
+<$list+$owner@$domain$>.
 

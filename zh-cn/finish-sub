@@ -26,16 +26,17 @@ Subject: 欢迎加入 $list$@$domain$
 %iftype nomail%无邮件%endif%
 版本\=。
 
-%wrap%您订阅所用的电子邮箱地址为 $subaddr$\=。
+%wrap%您订阅所用的电子邮箱地址为 <$subaddr$>\=。
 
 %ifcontrol closedlist%
   %^%%wrap%如果您打算取消订阅\=，需要联系一位管理员\=。您可以发电子邮件
-  到 $list+$owner@$domain$ 联系列表所有者\=。
+  到 <$list+$owner@$domain$> 联系列表所有者\=。
 %else%
   %^%%wrap%如果您打算取消订阅\=，请使用本电子邮箱地址发邮件
-  到 $list+$unsubscribe@$domain$\=。邮件主题与正文任意\=。随后您将收到确认
-  或进一步说明\=。
+  到 <$list+$unsubscribe@$domain$>\=。邮件主题与正文任意\=。随后您将收到确
+  认或进一步说明\=。
 %endif%
 
-%wrap%要获取关于本列表的其他信息及帮助\=，请发邮件到 $list+$help@$domain$
+%wrap%要获取关于本列表的其他信息及帮助\=，请发邮件
+到 <$list+$help@$domain$>。
 

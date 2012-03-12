@@ -25,20 +25,20 @@ Subject: Tervetuloa postituslistalle $list$@$domain$
 %iftype digest% postituslistan viestikoosteiden tilaajaksi. %endif%
 %iftype nomail% postituslistan jäseneksi ilman viestien jakelua. %endif%
 
-%wrap%Osoite, joka postituslistalle on liitetty, on $subaddr$.
+%wrap%Osoite, joka postituslistalle on liitetty, on <$subaddr$>.
 
 %ifcontrol closedlist%
   %^%%wrap%Jos haluat lopettaa postituslistan tilauksen, ota yhteyttä listan
   ylläpitäjään. Yhteydenotto onnistuu lähettämällä sähköpostia osoitteeseen
-  $list+$owner@$domain$.
+  <$list+$owner@$domain$>.
 %else%
   %^%%wrap%Jos haluat lopettaa postituslistan tilauksen, lähetä viesti
-  osoitteeseen $list+$unsubscribe@$domain$ samasta osoitteesta, joka
+  osoitteeseen <$list+$unsubscribe@$domain$> samasta osoitteesta, joka
   listalle on liitetty. Viestin otsikolla ja sisällöllä ei ole merkitystä.
   Tehtyäsi tämän sinulle lähetetään vahvistus tai lisäohjeita postituslistan
   tilauksen lopettamisesta.
 %endif%
 
 %wrap%Lisätietoa ja ohjeita tämän postituslistan käytöstä saa lähettämällä
-viestin osoitteeseen $list+$help@$domain$
+viestin osoitteeseen <$list+$help@$domain$>.
 

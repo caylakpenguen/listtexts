@@ -20,21 +20,21 @@
 %endif%
 
 %ifaction release%
-  %^%%wrap%您已成功通过 $posteraddr$ 发布到本列表的题为《\=$subject$\=》的
-  邮件\=。
+  %^%%wrap%您已成功通过 <$posteraddr$> 发布到本列表的题为《\=$subject$\=》
+  的邮件\=。
 %endif%
 
 %ifaction reject%
-  %^%%wrap%您已成功否决 $posteraddr$ 发送的题为《\=$subject$\=》的邮
+  %^%%wrap%您已成功否决 <$posteraddr$> 发送的题为《\=$subject$\=》的邮
   件\=。
 %endif%
 
 %ifaction permit%
-  %^%%wrap%您已成功批准 $subaddr$ 加入本列表\=。
+  %^%%wrap%您已成功批准 <$subaddr$> 加入本列表\=。
 %endif%
 
 %ifaction obstruct%
-  %^%%wrap%您已成功阻止 $subaddr$ 加入本列表\=。
+  %^%%wrap%您已成功阻止 <$subaddr$> 加入本列表\=。
 %endif%
 
 %ifaction post%

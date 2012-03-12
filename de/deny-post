@@ -10,7 +10,7 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Die Nachricht von $posteraddr$ mit dem Betreff "$subject$" konnte
+%wrap%Die Nachricht von <$posteraddr$> mit dem Betreff "$subject$" konnte
 nicht über die Liste verteilt werden,
 %ifreason maxmailsize%
   weil sie die maximal erlaubte Größe von $maxmailsize$ Bytes überschritten
@@ -38,7 +38,8 @@ nicht über die Liste verteilt werden,
 
   %ifcontrol closedlist closedlistsub%
     %^%%wrap%Wenn Sie die Liste abonnieren möchten, kontaktieren Sie einen
-    Listenadministrator. Senden Sie dazu eine Mail an $list+$owner@$domain$.
+    Listenadministrator. Senden Sie dazu eine Mail an
+    <$list+$owner@$domain$>.
   %endif%
 
   %^%%wrap%Wenn Sie denken, Sie hätten die Liste abonniert, so haben Sie

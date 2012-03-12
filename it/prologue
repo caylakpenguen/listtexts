@@ -1,2 +1,2 @@
 %wrap%Ciao, questo è il programma Mlmmj che gestisce la mailing list
-$list$@$domain$.
+<$list$@$domain$>.

@@ -11,7 +11,7 @@
   %ifreason request%
     Somebody (and we hope it was you)
   %endif%
-  has requested that your email address $subaddr$ be added
+  has requested that your email address <$subaddr$> be added
   %iftype normal%
     to the list. This means every time a post is sent to the list, you will
     receive a copy of it.
@@ -38,14 +38,14 @@
   %ifreason request%
     Somebody (and we hope it was you)
   %endif%
-  has requested that the email address $subaddr$ be removed from
+  has requested that the email address <$subaddr$> be removed from
   %iftype normal%%endif%
   %iftype digest% the digest version of %endif%
   %iftype nomail% the no-mail version of %endif%
   the list.
 %endif%
 
-%wrap%To confirm you want to do this, please send a message to $confaddr$
+%wrap%To confirm you want to do this, please send a message to <$confaddr$>
 which can usually be done simply by replying to this message. The subject
 and the body of the message can be anything.
 
