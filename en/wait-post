@@ -14,13 +14,13 @@ Content-Transfer-Encoding: 8bit
 submitted to the list. However, the moderators are being asked to review it
 before releasing it to the list
 %ifreason moderated%
-because this is a moderated list.
+  because this is a moderated list.
 %endif%
 %ifreason access%
-because of an access rule.
+  because of an access rule.
 %endif%
 %ifreason modnonsubposts%
-because you are not a subscriber.
+  because you are not a subscriber.
 
   %ifncontrol closedlist%%ifncontrol closedlistsub%
     %^%%text subrelease%

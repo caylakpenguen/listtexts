@@ -14,16 +14,16 @@ Content-Transfer-Encoding: 8bit
 postituslistalle. Ennen kuin viesti päätyy postituslistalle, moderaattorin
 on hyväksyttävä se,
 %ifreason moderated%
-koska tämä on moderoitu postituslista.
+  koska tämä on moderoitu postituslista.
 %endif%
 %ifreason access%
-koska tämän postituslistan käyttösäännöt edellyttävät sitä.
+  koska tämän postituslistan käyttösäännöt edellyttävät sitä.
 %endif%
 %ifreason modnonsubposts%
-koska et ole postituslistan tilaaja.
+  koska et ole postituslistan tilaaja.
 
   %ifncontrol closedlist%%ifncontrol closedlistsub%
-    %text subrelease%
+    %^%%text subrelease%
   %endif%%endif%
 %endif%
 

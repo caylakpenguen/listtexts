@@ -10,20 +10,20 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Il messaggio da $posteraddr$ con oggetto "$subject$" è stato
-inviato alla lista. Tuttavia, ai moderatori è stato richiesto di controllarlo
-prima di rilasciarlo,
+%wrap%Il messaggio da $posteraddr$ con oggetto "$subject$" è stato inviato
+alla lista. Tuttavia, ai moderatori è stato richiesto di controllarlo prima
+di rilasciarlo,
 %ifreason moderated%
-perché questa è una lista moderata.
+  perché questa è una lista moderata.
 %endif%
 %ifreason access%
-a causa di una regola di accesso.
+  a causa di una regola di accesso.
 %endif%
 %ifreason modnonsubposts%
-perché non sei iscritto/a.
+  perché non sei iscritto/a.
 
   %ifncontrol closedlist%%ifncontrol closedlistsub%
-    %text subrelease%
+    %^%%text subrelease%
   %endif%%endif%
 %endif%
 

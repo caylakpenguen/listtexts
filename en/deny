@@ -6,8 +6,7 @@
 %text prologue%
 
 %ifaction sub%
-  %^%%wrap%
-  You were unable to be subscribed to the list
+  %^%%wrap%You were unable to be subscribed to the list
   %ifreason disabled%
     because the
     %iftype normal% normal %endif%
@@ -30,16 +29,14 @@
 %endif%
 
 %ifaction unsub%
-  %^%%wrap%
-  You were unable to be unsubscribed from the list
+  %^%%wrap%You were unable to be unsubscribed from the list
   %ifreason unsubbed%
     because you are not subscribed.
 
-    %^%%wrap%
-    If you are receiving messages, perhaps a different email address is
-    subscribed. To find out which address you are subscribed with, refer to
-    the message welcoming you to the list, or look at the envelope
-    "Return-Path" header of a message you receive from the list.
+    %^%%wrap%If you are receiving messages, perhaps a different email
+    address is subscribed. To find out which address you are subscribed
+    with, refer to the message welcoming you to the list, or look at the
+    envelope "Return-Path" header of a message you receive from the list.
   %endif%
 %endif%
 

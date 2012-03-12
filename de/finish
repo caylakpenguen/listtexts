@@ -6,7 +6,7 @@
 %text prologue%
 
 %ifaction unsub%
-%wrap%
+  %^%%wrap%
   %ifreason request%
   %endif%
   %ifreason confirm%
@@ -20,29 +20,27 @@
 %endif%
 
 %ifaction release%
-%wrap%
-  Sie haben die Nachricht von $posteraddr$ mit dem Betreff "$subject$" erfolgreich
-  an die Liste weitergeleitet.
+  %^%%wrap%Sie haben die Nachricht von $posteraddr$ mit dem Betreff
+  "$subject$" erfolgreich an die Liste weitergeleitet.
 %endif%
 
 %ifaction reject%
-%wrap%
-  Sie haben die Nachricht von $posteraddr$ mit dem Betreff "$subject$" erfolgreich
-  abgewiesen.
+  %^%%wrap%Sie haben die Nachricht von $posteraddr$ mit dem Betreff
+  "$subject$" erfolgreich abgewiesen.
 %endif%
 
 %ifaction permit%
-%wrap%
-  Sie haben die Listenanmeldung von $subaddr$ erfolgreich zugelassen.
+  %^%%wrap%Sie haben die Listenanmeldung von $subaddr$ erfolgreich
+  zugelassen.
 %endif%
 
 %ifaction obstruct%
-%wrap%
-  Sie haben die Listenanmeldung von $subaddr$ erfolgreich abgewiesen.
+  %^%%wrap%Sie haben die Listenanmeldung von $subaddr$ erfolgreich
+  abgewiesen.
 %endif%
 
 %ifaction post%
-%wrap%
+  %^%%wrap%
   %ifreason confirm%
     Vielen Dank für die Bestätigung Ihrer
   %endif%
@@ -52,10 +50,11 @@
   %ifreason request%
     Danke für Ihre
   %endif%
-  Nachricht mit dem Betreff "$subject$"
+  Nachricht mit dem Betreff
   %ifreason release%
-    weitergeleitet
-  %endif%.
-
+    "$subject$" weitergeleitet.
+  %else%
+    "$subject$".
+  %endif%
   Sie wird nun über die Liste verteilt.
 %endif%

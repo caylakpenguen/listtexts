@@ -4,7 +4,7 @@
 %text prologue%
 
 %ifaction sub%
-%wrap%
+  %^%%wrap%
   %ifreason admin%
     Un amministratore
   %endif%
@@ -13,7 +13,8 @@
   %endif%
   ha richiesto l'aggiunta del tuo indirizzo di posta elettronica $subaddr$
   %iftype normal%
-    alla lista. Ciò significa che ogni volta che un messaggio viene inviato alla lista, tu ne riceverai una copia.
+    alla lista. Ciò significa che ogni volta che un messaggio viene inviato
+    alla lista, tu ne riceverai una copia.
   %endif%
   %iftype digest%
     alla lista, per ricevere digest. Ciò significa che riceverai più
@@ -21,34 +22,36 @@
     se ne sono accumulati un po'.
   %endif%
   %iftype nomail%
-    alla lista, senza invio della posta. Ciò significa che non riceverai alcun
-    messaggio relativo alla lista, ma ne sei sempre considerato/a un membro. Per esempio,
-    puoi inviare messaggi alla lista, cui solo gli iscritti possono scrivere,
-    ma la segui tramite un archivio web o un altro indirizzo di posta con cui
-    sei iscritto/a.
+    alla lista, senza invio della posta. Ciò significa che non riceverai
+    alcun messaggio relativo alla lista, ma ne sei sempre considerato/a un
+    membro. Per esempio, puoi inviare messaggi alla lista, cui solo gli
+    iscritti possono scrivere, ma la segui tramite un archivio web o un
+    altro indirizzo di posta con cui sei iscritto/a.
   %endif%
 %endif%
 
 %ifaction unsub%
-%wrap%
+  %^%%wrap%
   %ifreason admin%
     Un amministratore
   %endif%
   %ifreason request%
     Qualcuno (che speriamo sia tu)
   %endif%
-  ha richiesto la rimozione dell'indirizzo di posta elettronica $subaddr$ dalla
+  ha richiesto la rimozione dell'indirizzo di posta elettronica $subaddr$
+  dalla
   %iftype normal%%endif%
   %iftype digest% versione digest della %endif%
   %iftype nomail% versione no-mail della %endif%
   lista.
 %endif%
 
-%wrap%Per confermare l'azione, invia un messaggio a $confaddr$,
-tale azione può essere eseguita semplicemente rispondendo al messaggio. L'oggetto
-e il corpo del messaggio possono essere vuoti.
+%wrap%Per confermare l'azione, invia un messaggio a $confaddr$, tale azione
+può essere eseguita semplicemente rispondendo al messaggio. L'oggetto e il
+corpo del messaggio possono essere vuoti.
 
-Dopo tale operazione riceverai una risposta che ti informerà della sua riuscita.
+Dopo tale operazione riceverai una risposta che ti informerà della sua
+riuscita.
 
 Se non vuoi confermare l'azione, ignora questo messaggio.
 

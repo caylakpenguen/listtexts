@@ -4,20 +4,19 @@ Subject: Εγγεγραμμένα μέλη στη λίστα ταχυδρομε�
 
 %wrap%Μέλη της λίστας ταχυδρομείου
 %iftype all%
-(σε όλες τις κατηγορίες συμμετοχής):
+  (σε όλες τις κατηγορίες συμμετοχής):
 %else%
-
-%iftype normal% με κανονική συμμετοχή : %endif%
-%iftype digest% που λαμβάνουν συγκεντρωτικές ενημερώσεις : %endif%
-%iftype nomail% χωρίς αποστολή ενημερώτικών email (nomail subscription): %endif%
+  %iftype normal% με κανονική συμμετοχή\ : %endif%
+  %iftype digest% που λαμβάνουν συγκεντρωτικές ενημερώσεις\ : %endif%
+  %iftype nomail% χωρίς αποστολή ενημερώτικών email (nomail subscription): %endif%
 %endif%
 
 %iftype all normal%
-- %listsubs%
+  %^%- %listsubs%
 %endif%
 %iftype all digest%
-- %digestsubs%
+  %^%- %digestsubs%
 %endif%
 %iftype all nomail%
-- %nomailsubs%
+  %^%- %nomailsubs%
 %endif%

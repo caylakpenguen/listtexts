@@ -13,13 +13,13 @@ Content-Transfer-Encoding: 8bit
 %wrap%A message from $posteraddr$ with subject "$subject$" has been
 submitted for posting. You are being asked to moderate
 %ifreason modnonsubposts%
-because the requester is not a subscriber.
+  because the requester is not a subscriber.
 %endif%
 %ifreason moderated%
-because this is a moderated list.
+  because this is a moderated list.
 %endif%
 %ifreason access%
-because of an access rule.
+  because of an access rule.
 %endif%
 The message is below.
 
@@ -27,11 +27,12 @@ The message is below.
 which can usually be done simply by replying to this message.
 
 %ifcontrol subonrelease%
-If you wish, you can simultaneously release the post and subscribe the
-poster by sending a message to one of the following addresses:
-- Normal version: $listsubreleaseaddr$
-- Digest version: $digestsubreleaseaddr$
-- No-mail version: $nomailsubreleaseaddr$
+  %^%%wrap%If you wish, you can simultaneously release the post and
+  subscribe the poster by sending a message to one of the following
+  addresses:%nowrap%
+  %^%- %wrap%Normal version: $listsubreleaseaddr$%nowrap%
+  %^%- %wrap%Digest version: $digestsubreleaseaddr$%nowrap%
+  %^%- %wrap%No-mail version: $nomailsubreleaseaddr$%nowrap%
 %endif%
 
 %wrap%If you do not want to do any of this, either send a message to

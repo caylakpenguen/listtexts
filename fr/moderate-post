@@ -10,28 +10,34 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Un message de $posteraddr$ ayant pour sujet "$subject$" a été soumis pour envoi. Il vous est demandé de le modérer 
+%wrap%Un message de $posteraddr$ ayant pour sujet "$subject$" a été soumis
+pour envoi. Il vous est demandé de le modérer 
 %ifreason modnonsubposts%
-parce que le demandeur n'est pas inscrit.
+  parce que le demandeur n'est pas inscrit.
 %endif%
 %ifreason moderated%
-parce que c'est une liste modérée.
+  parce que c'est une liste modérée.
 %endif%
 %ifreason access%
-en raison d'une règle d'accès.
+  en raison d'une règle d'accès.
 %endif%
 Le message est ci-dessous.
 
-%wrap%Pour le délivrer à la liste, veuillez envoyer un message à $releaseaddr$ ce qui peut habituellement être fait simplement en répondant à ce message.
+%wrap%Pour le délivrer à la liste, veuillez envoyer un message à
+$releaseaddr$ ce qui peut habituellement être fait simplement en répondant à
+ce message.
 
 %ifcontrol subonrelease%
-Si vous le souhaitez, vous pouvez simultanément délivrer le message et inscrire le demandeur à la liste en envoyant un message à l'une des adresses suivantes :
-- Version normale : $listsubreleaseaddr$
-- Version digest : $digestsubreleaseaddr$
-- Version no-mail : $nomailsubreleaseaddr$
+  %^%%wrap%Si vous le souhaitez, vous pouvez simultanément délivrer le
+  message et inscrire le demandeur à la liste en envoyant un message à l'une
+  des adresses suivantes\ :%nowrap%
+  %^%- %wrap%Version normale\ : $listsubreleaseaddr$%nowrap%
+  %^%- %wrap%Version digest\ : $digestsubreleaseaddr$%nowrap%
+  %^%- %wrap%Version no-mail\ : $nomailsubreleaseaddr$%nowrap%
 %endif%
 
-%wrap%Si vous ne souhaitez faire aucune de ces actions, vous pouvez envoyer un message à $rejectaddr$ ou simplement ignorer ce message.
+%wrap%Si vous ne souhaitez faire aucune de ces actions, vous pouvez envoyer
+un message à $rejectaddr$ ou simplement ignorer ce message.
 
 Les modérateurs suivants ont reçu ce mail :
 - %moderators%

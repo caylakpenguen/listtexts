@@ -4,7 +4,7 @@
 %text prologue%
 
 %ifaction sub%
-%wrap%
+  %^%%wrap%
   %ifreason admin%
     Ylläpitäjä
   %endif%
@@ -34,7 +34,7 @@
 %endif%
 
 %ifaction unsub%
-%wrap%
+  %^%%wrap%
   %ifreason admin%
     Ylläpitäjä
   %endif%

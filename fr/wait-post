@@ -10,18 +10,20 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Le message de $posteraddr$ ayant pour sujet "$subject$" a été soumis à la liste. Cependant il a été demandé aux modérateurs de le contrôler avant de le délivrer à la liste
+%wrap%Le message de $posteraddr$ ayant pour sujet "$subject$" a été soumis à
+la liste. Cependant il a été demandé aux modérateurs de le contrôler avant
+de le délivrer à la liste
 %ifreason moderated%
-parce que c'est une liste modérée.
+  parce que c'est une liste modérée.
 %endif%
 %ifreason access%
-en raison d'une règle d'accès.
+  en raison d'une règle d'accès.
 %endif%
 %ifreason modnonsubposts%
-parce que vous n'êtes pas inscrit.
+  parce que vous n'êtes pas inscrit.
 
   %ifncontrol closedlist%%ifncontrol closedlistsub%
-    %text subrelease%
+    %^%%text subrelease%
   %endif%%endif%
 %endif%
 

@@ -10,8 +10,8 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%The message from $posteraddr$ with subject "$subject$" was unable
-to be delivered to the list
+%wrap%The message from $posteraddr$ with subject "$subject$" was unable to
+be delivered to the list
 %ifreason maxmailsize%
   because it exceeded the maximum allowed message size of $maxmailsize$
   bytes.
@@ -36,23 +36,22 @@ to be delivered to the list
   %endif%%endif%
 
   %ifcontrol closedlist closedlistsub%
-    %^%%wrap%
-    If you wish to become a subscriber, you will need to contact a list
-    administrator. You can email $list+$owner@$domain$ to contact the list
-    owner.
+    %^%%wrap%If you wish to become a subscriber, you will need to contact a
+    list administrator. You can email $list+$owner@$domain$ to contact the
+    list owner.
   %endif%
 
-  %^%%wrap%
-  If you believe you are a subscriber, you are probably subscribed with a
-  different email address. To find out which address you are subscribed
-  with, refer to the message welcoming you to the list, or look at the
-  envelope "Return-Path" header of a message you receive from the list.
+  %^%%wrap%If you believe you are a subscriber, you are probably subscribed
+  with a different email address. To find out which address you are
+  subscribed with, refer to the message welcoming you to the list, or look
+  at the envelope "Return-Path" header of a message you receive from the
+  list.
 %endif%
 
 %ifreason maxmailsize%
-(The beginning of the denied message is below.)
+  %^%(The beginning of the denied message is below.)
 %else%
-(The denied message is below.)
+  %^%(The denied message is below.)
 %endif%
 
 --=_$random0$$random1$_=
@@ -61,8 +60,8 @@ Content-Transfer-Encoding: 8bit
 Content-Disposition: inline; filename="message.eml"
 
 %ifreason maxmailsize%
-%originalmail 300%
+  %^%%originalmail 300%
 %else%
-%originalmail%
+  %^%%originalmail%
 %endif%
 --=_$random0$$random1$_=--

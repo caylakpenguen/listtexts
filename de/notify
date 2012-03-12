@@ -4,8 +4,7 @@
 %text prologue%
 
 %ifaction sub%
-%wrap%
-  Die Adresse $subaddr$ wurde bei der
+  %^%%wrap%Die Adresse $subaddr$ wurde bei der
   %iftype normal% Normalversion %endif%
   %iftype digest% Digest-Version %endif%
   %iftype nomail% No-Mail-Version %endif%
@@ -25,8 +24,7 @@
 %endif%
 
 %ifaction unsub%
-%wrap%
-  Die Adresse $subaddr$ wurde von der
+  %^%%wrap%Die Adresse $subaddr$ wurde von der
   %iftype normal%%endif%
   %iftype digest% Digest-Version der %endif%
   %iftype nomail% No-Mail-Version der %endif%

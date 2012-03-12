@@ -13,16 +13,16 @@ Content-Transfer-Encoding: 8bit
 %wrap%Die Mail von $posteraddr$ mit dem Betreff "$subject$" wurde an die Liste
 eingereicht. Jedoch ist vor der Weiterleitung eine Moderation erforderlich,
 %ifreason moderated%
-da es sich um eine moderierte Liste handelt.
+  da es sich um eine moderierte Liste handelt.
 %endif%
 %ifreason access%
-da eine Zugangsregel dies erfordert.
+  da eine Zugangsregel dies erfordert.
 %endif%
 %ifreason modnonsubposts%
-weil Sie nicht auf der Liste eingeschrieben sind.
+  weil Sie nicht auf der Liste eingeschrieben sind.
 
   %ifncontrol closedlist%%ifncontrol closedlistsub%
-    %text subrelease%
+    %^%%text subrelease%
   %endif%%endif%
 %endif%
 

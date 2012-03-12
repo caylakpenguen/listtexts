@@ -4,19 +4,19 @@ Subject: Postituslistan $list$@$domain$ tilaajat
 
 %wrap%Tässä on lista postituslistan
 %iftype all%
-kaikista tilaajista:
+  kaikista tilaajista:
 %else%
-%iftype normal% tavallisista tilaajista: %endif%
-%iftype digest% viestikoosteiden tilaajista: %endif%
-%iftype nomail% jäsenistä, joille ei välitetä postia: %endif%
+  %iftype normal% tavallisista tilaajista: %endif%
+  %iftype digest% viestikoosteiden tilaajista: %endif%
+  %iftype nomail% jäsenistä, joille ei välitetä postia: %endif%
 %endif%
 
 %iftype all normal%
-- %listsubs%
+  %^%- %listsubs%
 %endif%
 %iftype all digest%
-- %digestsubs%
+  %^%- %digestsubs%
 %endif%
 %iftype all nomail%
-- %nomailsubs%
+  %^%- %nomailsubs%
 %endif%

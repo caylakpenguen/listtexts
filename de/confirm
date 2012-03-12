@@ -4,7 +4,7 @@
 %text prologue%
 
 %ifaction sub%
-%wrap%
+  %^%%wrap%
   %ifreason admin%
     Ein Listenadministrator
   %endif%
@@ -17,22 +17,22 @@
     erhalten, die an die Liste geschickt wird.
   %endif%
   %iftype digest%
-    der Liste (im Digest-Modus) hinzuzufügen. Das heißt, dass Sie die
-    an die Liste gesandten Mails in regelmäßigen Abständen (oder nach
-    Erreichen einer bestimmten Nachrichtenmenge) zu einer Sammelmail
-    zusammengefasst erhalten.
+    der Liste (im Digest-Modus) hinzuzufügen. Das heißt, dass Sie die an die
+    Liste gesandten Mails in regelmäßigen Abständen (oder nach Erreichen
+    einer bestimmten Nachrichtenmenge) zu einer Sammelmail zusammengefasst
+    erhalten.
   %endif%
   %iftype nomail%
-    der Liste (im No-Mail-Modus) hinzuzufügen. Das heißt, Sie erhalten
-    zwar keine Nachrichten von der Liste, werden jedoch als Teilnehmer
-    geführt. So dürfen Sie z.B. Nachrichten an die Liste senden und können
-    die Diskussionen in einem Webarchiv oder über eine zweite angemeldete
+    der Liste (im No-Mail-Modus) hinzuzufügen. Das heißt, Sie erhalten zwar
+    keine Nachrichten von der Liste, werden jedoch als Teilnehmer geführt.
+    So dürfen Sie z.B. Nachrichten an die Liste senden und können die
+    Diskussionen in einem Webarchiv oder über eine zweite angemeldete
     Mailadresse verfolgen
   %endif%
 %endif%
 
 %ifaction sub%
-%wrap%
+  %^%%wrap%
   %ifreason admin%
     Ein Listenadministrator
   %endif%
@@ -46,10 +46,9 @@
   beantragt.
 %endif%
 
-%wrap%Um sicher zu stellen, dass Sie das wirklich wollen, senden Sie
-eine Nachricht an $confaddr$, was gewöhnlich durch einfaches Antworten
-auf diese Mail erfolgen kann. Betreff und Text Ihrer Antwort können
-beliebig sein.
+%wrap%Um sicher zu stellen, dass Sie das wirklich wollen, senden Sie eine
+Nachricht an $confaddr$, was gewöhnlich durch einfaches Antworten auf diese
+Mail erfolgen kann. Betreff und Text Ihrer Antwort können beliebig sein.
 
 Nach dem Absenden Ihrer Antwortmail sollten Sie eine Antwortnachricht
 erhalten, dass die Operation erfolgreich war.

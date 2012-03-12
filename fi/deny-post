@@ -34,29 +34,27 @@ välittää postituslistalle,
   koska et ole postituslistan tilaaja.
 
   %ifncontrol closedlist%%ifncontrol closedlistsub%
-    %text subrelease%
+    %^%%text subrelease%
   %endif%%endif%
 
   %ifcontrol closedlist closedlistsub%
-%wrap%
-    Jos haluta liittyä postituslistalle, ota yhteyttä listan ylläpitäjään.
-    Ylläpitäjään saat yhteyden lähettämällä sähköpostia osoitteeseen
-    $list+$owner@$domain$.
+    %^%%wrap%Jos haluta liittyä postituslistalle, ota yhteyttä listan
+    ylläpitäjään. Ylläpitäjään saat yhteyden lähettämällä sähköpostia
+    osoitteeseen $list+$owner@$domain$.
   %endif%
 
-%wrap%
-  Jos tiedät olevasi tämän postituslistan tilaaja, olet todennäköisesti
-  tilannut sen jollakin toisella sähköpostiosoitteella. Voit selvittää
-  listalle liitetyn osoitteen viestistä, jossa sinut toivotetaan
+  %^%%wrap%Jos tiedät olevasi tämän postituslistan tilaaja, olet
+  todennäköisesti tilannut sen jollakin toisella sähköpostiosoitteella. Voit
+  selvittää listalle liitetyn osoitteen viestistä, jossa sinut toivotetaan
   tervetulleeksi listalle. Jos se ei ole enää tallessa, katso
   "Return-Path"-otsikkotieto viimeisimmästä viestistä, jonka olet saanut
   postituslistalta.
 %endif%
 
 %ifreason maxmailsize%
-(Alkuosa viestistä, jota ei lähetetty listalle, on alla.)
+  %^%(Alkuosa viestistä, jota ei lähetetty listalle, on alla.)
 %else%
-(Viesti, jota ei lähetetty listalle, on luettavissa alla.)
+  %^%(Viesti, jota ei lähetetty listalle, on luettavissa alla.)
 %endif%
 
 --=_$random0$$random1$_=
@@ -65,8 +63,8 @@ Content-Transfer-Encoding: 8bit
 Content-Disposition: inline; filename="message.eml"
 
 %ifreason maxmailsize%
-%originalmail 300%
+  %^%%originalmail 300%
 %else%
-%originalmail%
+  %^%%originalmail%
 %endif%
 --=_$random0$$random1$_=--

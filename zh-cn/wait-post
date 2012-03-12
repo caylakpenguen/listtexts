@@ -1,4 +1,4 @@
-Subject: 等待发布到 $list$@$domain$: $subject$
+Subject: 等待发布到 $list$@$domain$：$subject$
 MIME-Version: 1.0
 Content-Type: multipart/mixed;
  boundary="=_$random0$$random1$_="
@@ -10,23 +10,23 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%来自 $posteraddr$ 题为《$subject$》的邮件已提交至列表。
-然而，%ifreason moderated%
-因为这是先审列表，
+%wrap%来自 $posteraddr$ 题为《\=$subject$\=》的邮件已提交至列表\=。然而\=，
+%ifreason moderated%
+  因为这是先审列表\=，
 %endif%
 %ifreason access%
-由于访问规则，
+  由于访问规则\=，
 %endif%
 %ifreason modnonsubposts%
-因为您不是订阅者。
+  因为您不是订阅者\=。
 
   %ifncontrol closedlist%%ifncontrol closedlistsub%
-    %text subrelease%
+    %^%%text subrelease%
   %endif%%endif%
 %endif%
-需要版主审核后才能发布到该列表。
+需要版主审核后才能发布到该列表\=。
 
-(下为邮件。)
+（\=下为邮件\=。\=）
 
 --=_$random0$$random1$_=
 Content-Type: message/rfc822

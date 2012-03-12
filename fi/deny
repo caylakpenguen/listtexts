@@ -6,8 +6,7 @@
 %text prologue%
 
 %ifaction sub%
-%wrap%
-  Sinua ei voitu liittää postituslistalle,
+  %^%%wrap%Sinua ei voitu liittää postituslistalle,
   %ifreason disabled%
     koska listan
     %iftype normal% tavallinen versio %endif%
@@ -30,22 +29,21 @@
 %endif%
 
 %ifaction unsub%
-%wrap%
-  Jäsenyyttäsi postituslistalla ei voitu lopettaa,
+  %^%%wrap%Jäsenyyttäsi postituslistalla ei voitu lopettaa,
   %ifreason unsubbed%
     koska et ole listan tilaaja.
 
-%wrap%
-    Jos tästä huolimatta saat postituslistalta viestejä, olet ehkä liittynyt
-    listalle jollain toisella sähköpostiosoitteella. Voit selvittää listalle
-    liitetyn osoitteen viestistä, jossa sinut toivotetaan tervetulleeksi
-    listalle. Jos se ei ole enää tallessa, katso "Return-Path"-otsikkotieto
-    viimeisimmästä viestistä, jonka olet saanut postituslistalta.
+    %^%%wrap%Jos tästä huolimatta saat postituslistalta viestejä, olet ehkä
+    liittynyt listalle jollain toisella sähköpostiosoitteella. Voit
+    selvittää listalle liitetyn osoitteen viestistä, jossa sinut toivotetaan
+    tervetulleeksi listalle. Jos se ei ole enää tallessa, katso
+    "Return-Path"-otsikkotieto viimeisimmästä viestistä, jonka olet saanut
+    postituslistalta.
   %endif%
 %endif%
 
 %ifaction release reject%
-%wrap%
+  %^%%wrap%
   %ifaction release%
     Viestin hyväksyminen postituslistalle välitettäväksi ei onnistunut,
   %endif%
@@ -62,7 +60,7 @@
 %endif%
 
 %ifaction permit obstruct%
-%wrap%
+  %^%%wrap%
   %ifaction permit%
     Postituslistan liittymispyynnön hyväksyminen ei onnistunut,
   %endif%

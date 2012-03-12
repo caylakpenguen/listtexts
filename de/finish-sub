@@ -29,18 +29,14 @@ der Liste.
 Ihre Abonnement-Adresse lautet $subaddr$.
 
 %ifcontrol closedlist%
-%wrap%
-  Zum Abmelden kontaktieren Sie bitte den Listenadministrator.
+  %^%%wrap%Zum Abmelden kontaktieren Sie bitte den Listenadministrator.
   Senden Sie dazu eine Mail an $list+$owner@$domain$ .
 %else%
-%wrap%
-  Zum Abmelden senden Sie eine Mail an $list+$unsubscribe@$domain$
+  %^%%wrap%Zum Abmelden senden Sie eine Mail an $list+$unsubscribe@$domain$
   Bitte achten Sie darauf die oben genannte Absender-Adresse zu benutzen.
   Betreff und Inhalt der Nachricht sind unerheblich. Sie erhalten eine
   Abmeldebestätigungsaufforderung oder eine Mail mit weiteren Instruktionen.
 %endif%
 
-%wrap%
-
-Um Hilfe und weitere Informationen zu dieser Liste zu erhalten, Senden Sie
-eine Mail an $list+$help@$domain$
+%wrap%Um Hilfe und weitere Informationen zu dieser Liste zu erhalten, Senden
+Sie eine Mail an $list+$help@$domain$
