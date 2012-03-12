@@ -22,3 +22,4 @@ Subject: $list$@$domain$ 的订阅者列表
 %iftype all nomail%
   %^%- %nomailsubs%
 %endif%
+

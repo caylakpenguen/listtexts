@@ -2,7 +2,7 @@
 %ifaction release reject%Subject: Διαχείριση $list$@$domain$: $subject$%endif%
 %ifaction permit obstruct%Subject: Προστασία $list$@$domain$: $subaddr$%endif%
 %ifaction post%Subject: Εμφάνιση μύνηματος στη $list$@$domain$: $subject$%endif%
- 
+
 %text prologue%
 
 %ifaction unsub%

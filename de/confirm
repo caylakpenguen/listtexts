@@ -11,7 +11,7 @@
   %ifreason request%
     Jemand (hoffentlich Sie selbst)
   %endif%
-    hat darum gebeten, Ihre Mailadresse $subaddr$
+  hat darum gebeten, Ihre Mailadresse $subaddr$
   %iftype normal%
     der Liste hinzuzufügen. Das heißt, dass Sie eine Kopie jeder Mail
     erhalten, die an die Liste geschickt wird.
@@ -54,3 +54,4 @@ Nach dem Absenden Ihrer Antwortmail sollten Sie eine Antwortnachricht
 erhalten, dass die Operation erfolgreich war.
 
 Sollten Sie das nicht wollen, können Sie diese Mail einfach ignorieren.
+

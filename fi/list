@@ -20,3 +20,4 @@ Subject: Postituslistan $list$@$domain$ tilaajat
 %iftype all nomail%
   %^%- %nomailsubs%
 %endif%
+

@@ -22,3 +22,4 @@ Subject: Iscritti a $list$@$domain$
 %iftype all nomail%
   %^%- %nomailsubs%
 %endif%
+
