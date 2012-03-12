@@ -19,13 +19,15 @@ Content-Transfer-Encoding: 8bit
   由于访问规则\=，
 %endif%
 %ifreason modnonsubposts%
-  因为您不是订阅者\=。
+  因为您不是订阅者\=，
+%endif%
+需要版主审核后才能发布到该列表\=。
 
+%ifreason modnonsubposts%
   %ifncontrol closedlist%%ifncontrol closedlistsub%
     %^%%text subrelease%
   %endif%%endif%
 %endif%
-需要版主审核后才能发布到该列表\=。
 
 （\=下为邮件\=。\=）
 
