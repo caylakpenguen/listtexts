@@ -8,7 +8,7 @@ Subject: Εγγεγραμμένα μέλη στη λίστα ταχυδρομε�
 %else%
   %iftype normal% με κανονική συμμετοχή\ : %endif%
   %iftype digest% που λαμβάνουν συγκεντρωτικές ενημερώσεις\ : %endif%
-  %iftype nomail% χωρίς αποστολή ενημερώτικών email (nomail subscription): %endif%
+  %iftype nomail% χωρίς αποστολή ενημερώτικών email (no-mail subscription): %endif%
 %endif%
 
 %iftype all normal%
