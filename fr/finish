@@ -48,7 +48,7 @@
   %ifreason request%
     Merci pour
   %endif%
-  votre message ayant pour sujet "$subject$".
-  Il a maintenant été distribué à la liste.
+  votre message ayant pour sujet "$subject$". Il a maintenant été distribué
+  à la liste.
 %endif%
 

@@ -48,7 +48,6 @@
   %ifreason request%
     Kiitos viestistäsi
   %endif%
-  otsikolla "$subject$".
-  Se välitetään postituslistan tilaajille.
+  otsikolla "$subject$". Se välitetään postituslistan tilaajille.
 %endif%
 
