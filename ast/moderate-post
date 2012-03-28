@@ -1,4 +1,4 @@
-Asuntu: Por favor, modera $list$@$domain$: $subject$
+Subject: Por favor, modera $list$@$domain$: $subject$
 MIME-Version: 1.0
 Content-Type: multipart/mixed;
  boundary="=_$random0$$random1$_="
@@ -10,8 +10,8 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Se recibió un mensaxe de <$posteraddr$> col asuntu "$subject$"
-unviáu pa espublizar. Te pedimos que lu moderes
+%wrap%Se recibió un mensaxe de <$posteraddr$> col asuntu "$subject$" unviáu
+pa espublizar. Te pedimos que lu moderes
 %ifreason modnonsubposts%
   porque'l remitente nun ye suscriptor.
 %endif%
@@ -23,13 +23,12 @@ unviáu pa espublizar. Te pedimos que lu moderes
 %endif%
 El mensaxe ta más abaxo.
 
-%wrap%Pa lliberalu a la llista, unvia un mensaxe a <$releaseaddr$>
-pa lo que de vezu val con simplemente responder a esti mensaxe.
+%wrap%Pa lliberalu a la llista, unvia un mensaxe a <$releaseaddr$> pa lo que
+de vezu val con simplemente responder a esti mensaxe.
 
 %ifcontrol subonrelease%
-  %^%%wrap%Si quies, pues simultaneamante lliberar el mensaxe y
-  suscribir al remitente unviando un mensaxe a una de les siguientes
-  direiciones:%nowrap%
+  %^%%wrap%Si quies, pues simultaneamante lliberar el mensaxe y suscribir al
+  remitente unviando un mensaxe a una de les siguientes direiciones:%nowrap%
   %^%- %wrap%Versión normal: <$listsubreleaseaddr$>%nowrap%
   %^%- %wrap%Versión resumida: <$digestsubreleaseaddr$>%nowrap%
   %^%- %wrap%Versión ensin corréu: <$nomailsubreleaseaddr$>%nowrap%

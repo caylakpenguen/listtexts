@@ -17,16 +17,16 @@
     recibirás una copia del mesmu.
   %endif%
   %iftype digest%
-    a la llista, pa recibir resumes. Esto quier dicir que recibirás múltiples
-    mensaxes nun únicu mensaxe de corréu, a intervalos regulares, o cuando
-    s'acumulen munchos mensaxes.
+    a la llista, pa recibir resumes. Esto quier dicir que recibirás
+    múltiples mensaxes nun únicu mensaxe de corréu, a intervalos regulares,
+    o cuando s'acumulen munchos mensaxes.
   %endif%
   %iftype nomail%
     a la llista, ensin entrega de corréu. Esto quier dicir que nun recibirás
-    dengún mensaxe de la llista, pero tas consideráu miembru. Esto significa,
-    por exemplu, que podrás escribir a una llista na que sólo los suscriptores
-    puen facelo, mientres sigues la llista per un archivu web o otra direición
-    de corréu suscrita.
+    dengún mensaxe de la llista, pero tas consideráu miembru. Esto
+    significa, por exemplu, que podrás escribir a una llista na que sólo los
+    suscriptores puen facelo, mientres sigues la llista per un archivu web o
+    otra direición de corréu suscrita.
   %endif%
 %endif%
 
@@ -41,9 +41,9 @@
   pidió que la direición de corréu <$subaddr$> se desanicie de la llista.
 %endif%
 
-%wrap%Pa confirmar que quies facelo, unvia un mensaxe a <$confaddr$>
-lo que de vezu pue facese simplemente respondiendo a esti mensaxe. L'asuntu
-y cuerpu del mensaxe puen ser cualesquier cosa.
+%wrap%Pa confirmar que quies facelo, unvia un mensaxe a <$confaddr$> lo que
+de vezu pue facese simplemente respondiendo a esti mensaxe. L'asuntu y
+cuerpu del mensaxe puen ser cualesquier cosa.
 
 Tres facelo, tendríes de recibir una contestación pa informate de que la
 operación foi correuta.

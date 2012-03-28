@@ -1,4 +1,4 @@
-Asuntu: Información de $list$@$domain$
+Subject: Información de $list$@$domain$
 
 %text prologue%
 
@@ -45,7 +45,8 @@ los suscriptores reciben una copia del mesmu.
 %ifcontrol closedlist%
   %^%%wrap%Pa des-subscribite comunicate con un alministrador de la llista.
 %else%
-  %^%%wrap%Pa des-subscribite manda un corréu a <$list+$unsubscribe@$domain$>.
+  %^%%wrap%Pa des-subscribite manda un corréu a
+  <$list+$unsubscribe@$domain$>.
 %endif%
 
 %wrap%Los mensaxes s'asoleyen mandando un corréu a <$list$@$domain$>.
@@ -55,8 +56,8 @@ los suscriptores reciben una copia del mesmu.
 %endif%%endif%
 
 %ifcontrol moderated%
-  %^%%wrap%La llista tien moderadores que revisarán los mensaxes enantes
-  de lliberalos a la llista.
+  %^%%wrap%La llista tien moderadores que revisarán los mensaxes enantes de
+  lliberalos a la llista.
 %else%
   %ifcontrol subonlypost%%ifcontrol modnonsubposts%
     %^%%wrap%La llista tien moderadores que revisarán los mensaxes de los
@@ -65,8 +66,8 @@ los suscriptores reciben una copia del mesmu.
 %endif%
 
 %ifcontrol access%
-  %^%%wrap%La llista tamién tien regles d'accesu que puen afeutar a quién pue
-  mandar mensaxes y qué mensaxes se moderen.
+  %^%%wrap%La llista tamién tien regles d'accesu que puen afeutar a quién
+  pue mandar mensaxes y qué mensaxes se moderen.
 %endif%
 
 %ifncontrol noget%%ifncontrol noarchive%

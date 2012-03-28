@@ -49,8 +49,8 @@
     Nun pudisti refugar el mensaxe conseñáu
   %endif%
   %ifreason notfound%
-    porque nun se pudo alcontrar. Seique otru moderator yá lu
-    desanició o lu refugó, o espiró.
+    porque nun se pudo alcontrar. Seique otru moderator yá lu desanició o lu
+    refugó, o espiró.
   %endif%
   %ifreason moderators%
     porque nun yes moderador de la llista.
@@ -66,8 +66,8 @@
     Nun pudisti torgar la solicitú de suscripción conseñada
   %endif%
   %ifreason notfound%
-    porque nun se pudo alcontrar. Seique otru moderator yá lu
-    permitiera o lu torgara, o espiró.
+    porque nun se pudo alcontrar. Seique otru moderator yá lu permitiera o
+    lu torgara, o espiró.
   %endif%
   %ifreason gatekeepers%
     porque nun yes supervisor de la llista.

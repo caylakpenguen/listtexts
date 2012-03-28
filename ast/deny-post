@@ -1,4 +1,4 @@
-Asuntu: Mensaxe a $list$@$domain$ denegáu: $subject$
+Subject: Mensaxe a $list$@$domain$ denegáu: $subject$
 MIME-Version: 1.0
 Content-Type: multipart/mixed;
  boundary="=_$random0$$random1$_="
@@ -13,8 +13,7 @@ Content-Transfer-Encoding: 8bit
 %wrap%El mensaxe de <$posteraddr$> con asuntu "$subject$" nun se pudo
 entregar a la llista
 %ifreason maxmailsize%
-  porque pasó del tamañu máximu permitíu de mensaxe de $maxmailsize$
-  bytes.
+  porque pasó del tamañu máximu permitíu de mensaxe de $maxmailsize$ bytes.
 %endif%
 %ifreason tocc%
   porque la direición de la llista nun ta nes testeres Pa: o CC:.

@@ -1,4 +1,4 @@
-Asuntu: Esperando lliberación a $list$@$domain$: $subject$
+Subject: Esperando lliberación a $list$@$domain$: $subject$
 MIME-Version: 1.0
 Content-Type: multipart/mixed;
  boundary="=_$random0$$random1$_="
@@ -10,9 +10,9 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%El mensaxe de <$posteraddr$> col asuntu "$subject$" s'unvió a
-la llista. Sicasí, se pidió que los moderadores lu revisen enantes de
-lliberalu a la llista
+%wrap%El mensaxe de <$posteraddr$> col asuntu "$subject$" s'unvió a la
+llista. Sicasí, se pidió que los moderadores lu revisen enantes de lliberalu
+a la llista
 %ifreason moderated%
   porque esta ye una llista moderada.
 %endif%
