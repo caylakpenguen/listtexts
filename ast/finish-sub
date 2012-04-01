@@ -26,7 +26,7 @@ Subject: Bienveníu a $list$@$domain$
 %iftype nomail% ensin corréu %endif%
 de la llista.
 
-La direición de corréu cola que tas suscritu ye <$subaddr$>.
+%wrap%La direición de corréu cola que tas suscritu ye <$subaddr$>.
 
 %ifcontrol closedlist%
   %^%%wrap%Si nel futuru quies des-suscribite, tendrás de ponete'n contautu

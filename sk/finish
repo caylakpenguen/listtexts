@@ -20,11 +20,13 @@
 %endif%
 
 %ifaction release%
-  %^%%wrap%Správu "$subject$" na zverejnenie v diskusii od <$posteraddr$> ste úspešne povolili.
+  %^%%wrap%Správu "$subject$" na zverejnenie v diskusii od <$posteraddr$>
+  ste úspešne povolili.
 %endif%
 
 %ifaction reject%
-  %^%%wrap%Správu "$subject$" na zverejnenie v diskusii od <$posteraddr$> ste úspešne odmietli.
+  %^%%wrap%Správu "$subject$" na zverejnenie v diskusii od <$posteraddr$>
+  ste úspešne odmietli.
 %endif%
 
 %ifaction permit%
@@ -46,7 +48,6 @@
   %ifreason request%
     Ďakujeme za príspevok 
   %endif%
-  s predmetom "$subject$".
-  Príspevok bude odoslaný do mailovej diskusie.
+  s predmetom "$subject$". Príspevok bude odoslaný do mailovej diskusie.
 %endif%
 

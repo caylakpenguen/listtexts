@@ -33,9 +33,9 @@
     lebo nie ste prihlásený/prihlásená.
 
     %^%%wrap%Tento mail ste dostali preto, lebo ste možno
-    prihlásený/prihlásená s inou adresou. Vašu prihlasovaciu adresu
-    nájdete v privítacej správe, ktorú ste z tejto diskusie dostali,
-    alebo sa pozrite do hlavičky správ, ktoré z tejto diskusie dostávate.
+    prihlásený/prihlásená s inou adresou. Vašu prihlasovaciu adresu nájdete
+    v privítacej správe, ktorú ste z tejto diskusie dostali, alebo sa
+    pozrite do hlavičky správ, ktoré z tejto diskusie dostávate.
   %endif%
 %endif%
 
@@ -48,8 +48,8 @@
     Vaše odmietnutie správy na zverejnenie nebolo úspešné
   %endif% 
   %ifreason notfound%
-    lebo sa ju nepodarilo nájsť. Iný moderátor ju už asi povolil alebo odmietol,
-    alebo expirovala.
+    lebo sa ju nepodarilo nájsť. Iný moderátor ju už asi povolil alebo
+    odmietol, alebo expirovala.
   %endif%
   %ifreason moderators%
     lebo nie ste moderátorom tejto diskusie.
@@ -59,14 +59,16 @@
 %ifaction permit obstruct%
   %^%%wrap%
   %ifaction permit%
-    Vami zaslané povolenie požiadavky na prihlásenie do mailovej diskusie zlyhalo,
+    Vami zaslané povolenie požiadavky na prihlásenie do mailovej diskusie
+    zlyhalo,
   %endif%
   %ifaction obstruct%
-    Vami zaslané odmietnutie požiadavky na prihlásenie do mailovej diskusie zlyhalo,
+    Vami zaslané odmietnutie požiadavky na prihlásenie do mailovej diskusie
+    zlyhalo,
   %endif%
   %ifreason notfound%
-    lebo sa ju nepodarilo nájsť. Iný správca ju už asi povolil alebo odmietol,
-    alebo expirovala.
+    lebo sa ju nepodarilo nájsť. Iný správca ju už asi povolil alebo
+    odmietol, alebo expirovala.
   %endif%
   %ifreason gatekeepers%
     lebo nie ste správcom tejto diskusie.

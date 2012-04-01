@@ -10,9 +10,9 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%Z adresy <$posteraddr$> bola do mailovej diskusie zaslaná 
-správa s predmetom "$subject$". Pred jej zverejnením boli moderátori 
-požiadaní o jej odsúhlasenie, lebo
+%wrap%Z adresy <$posteraddr$> bola do mailovej diskusie zaslaná správa s
+predmetom "$subject$". Pred jej zverejnením boli moderátori požiadaní o jej
+odsúhlasenie, lebo
 %ifreason moderated%
   ide o moderovanú mailovú diskusiu.
 %endif%
@@ -20,7 +20,7 @@ požiadaní o jej odsúhlasenie, lebo
   to vyžadujú prístupové pravidlá diskusie.
 %endif%
 %ifreason modnonsubposts%
- nie ste jej abonentom.
+  nie ste jej abonentom.
 
   %ifncontrol closedlist%%ifncontrol closedlistsub%
     %^%%text subrelease%
