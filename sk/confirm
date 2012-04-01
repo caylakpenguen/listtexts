@@ -15,17 +15,20 @@
   %iftype normal%
     do mailovej diskusie. To znamená, že zakaždým, keď do diskusie bude poslaná
     správa, dostanete jej kópiu.
-  %endif% iftype digest%
+  %endif%
+  %iftype digest%
     do mailovej diskusie, aby ste prijímali súhrnné správy. To znamená, že
     budete dostávať viacero správ naraz v pravidelných intervaloch, alebo keď sa
     zozbiera dostatočný počet správ.
-  %endif% iftype nomail%
+  %endif%
+  %iftype nomail%
     do mailovej diskusie, bez posielania mailov. To znamená, že mailom nebudete
     dostávať žiadne správy, ale budete považovaný/považovaná za člena. Budete
     teda mať pávo posielať správy do diskusie, určenej len pre členov, pričom
     zaslané správy budete môcť čítať v archíve diskusie alebo na inej mailovej
     adrese. 
-  %endif% endif%
+  %endif%
+%endif%
 
 %ifaction unsub%
   %^%%wrap%
