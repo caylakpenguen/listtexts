@@ -1,7 +1,7 @@
-%ifaction unsub%Predmet: Dovidenia z $list$@$domain$%endif%
-%ifaction release reject%Predmet: Moderovanie $list$@$domain$: $subject$%endif%
-%ifaction permit obstruct%Predmet: Odmietnutie $list$@$domain$: $subaddr$%endif%
-%ifaction post%Predmet: Zverejnenie v $list$@$domain$: $subject$%endif%
+%ifaction unsub%Subject: Dovidenia z $list$@$domain$%endif%
+%ifaction release reject%Subject: Moderovanie $list$@$domain$: $subject$%endif%
+%ifaction permit obstruct%Subject: Odmietnutie $list$@$domain$: $subaddr$%endif%
+%ifaction post%Subject: Zverejnenie v $list$@$domain$: $subject$%endif%
 
 %text prologue%
 

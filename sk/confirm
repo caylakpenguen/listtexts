@@ -1,5 +1,5 @@
-%ifaction sub%Predmet: Potvrdenie prihlásenia do $list$@$domain$%endif%
-%ifaction unsub%Predmet: Potvrdenie odhlásenia z $list$@$domain$%endif%
+%ifaction sub%Subject: Potvrdenie prihlásenia do $list$@$domain$%endif%
+%ifaction unsub%Subject: Potvrdenie odhlásenia z $list$@$domain$%endif%
 
 %text prologue%
 

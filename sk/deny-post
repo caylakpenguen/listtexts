@@ -1,4 +1,4 @@
-Predmet: Odmietnutie príspevku  $subject$ do $list$@$domain$
+Subject: Odmietnutie príspevku  $subject$ do $list$@$domain$
 MIME-Version: 1.0
 Content-Type: multipart/mixed;
  boundary="=_$random0$$random1$_="
@@ -20,7 +20,7 @@ doručiť do mailovej diskusie
   lebo adresa diskusie nebola v poliach hlavičky Komu: ani Kópia: nájdená.
 %endif%
 %ifreason access%
-  z dôvodu administrátorom nastavených prístupových pravidiel .
+  z dôvodu administrátorom nastavených prístupových pravidiel.
 %endif%
 %ifreason expired %
   lebo uplynula príliš dlhá doba bez toho, aby ju povolil moderátor.

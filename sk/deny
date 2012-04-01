@@ -1,7 +1,7 @@
-%ifaction sub%Predmet: Neúspešné prihlásenie do $list$@$domain$%endif%
-%ifaction unsub%Predmet: Neúspešné odhlásenie z $list$@$domain$%endif%
-%ifaction release reject%Predmet: Neúspešné moderovanie $list$@$domain$%endif%
-%ifaction permit obstruct%Predmet: Neúspešné spravovanie $list$@$domain$%endif%
+%ifaction sub%Subject: Neúspešné prihlásenie do $list$@$domain$%endif%
+%ifaction unsub%Subject: Neúspešné odhlásenie z $list$@$domain$%endif%
+%ifaction release reject%Subject: Neúspešné moderovanie $list$@$domain$%endif%
+%ifaction permit obstruct%Subject: Neúspešné spravovanie $list$@$domain$%endif%
 
 %text prologue%
 
