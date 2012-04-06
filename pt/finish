@@ -1,7 +1,7 @@
-%ifaction unsub%Assunto: cancelamento da subscrição em $list$@$domain$%endif%
-%ifaction release reject%Assunto: moderação em $list$@$domain$: $subject$%endif%
-%ifaction permit obstruct%Assunto: rejeição em $list$@$domain$: $subaddr$%endif%
-%ifaction post%Assunto: publicação em $list$@$domain$: $subject$%endif%
+%ifaction unsub%Subject: cancelamento da subscrição em $list$@$domain$%endif%
+%ifaction release reject%Subject: moderação em $list$@$domain$: $subject$%endif%
+%ifaction permit obstruct%Subject: rejeição em $list$@$domain$: $subaddr$%endif%
+%ifaction post%Subject: publicação em $list$@$domain$: $subject$%endif%
 
 %text prologue%
 

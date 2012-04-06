@@ -1,7 +1,7 @@
-%ifaction sub%Assunto: não foi possível subscrever em $list$@$domain$%endif%
-%ifaction unsub%Assunto: não foi possível cancelar a subscrição em $list$@$domain$%endif%
-%ifaction release reject%Assunto: não foi possível moderar $list$@$domain$%endif%
-%ifaction permit obstruct%Assunto: não foi possível comunicar com o administrador de $list$@$domain$%endif%
+%ifaction sub%Subject: não foi possível subscrever em $list$@$domain$%endif%
+%ifaction unsub%Subject: não foi possível cancelar a subscrição em $list$@$domain$%endif%
+%ifaction release reject%Subject: não foi possível moderar $list$@$domain$%endif%
+%ifaction permit obstruct%Subject: não foi possível comunicar com o administrador de $list$@$domain$%endif%
 
 %text prologue%
 

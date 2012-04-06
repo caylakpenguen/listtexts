@@ -1,5 +1,5 @@
-%ifaction sub%Assunto: Confirmação de subscrição em $list$@$domain$%endif%
-%ifaction unsub%Assunto: Confirmação de cancelamento da subscrição em $list$@$domain$%endif%
+%ifaction sub%Subject: Confirmação de subscrição em $list$@$domain$%endif%
+%ifaction unsub%Subject: Confirmação de cancelamento da subscrição em $list$@$domain$%endif%
 
 %text prologue%
 

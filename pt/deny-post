@@ -1,4 +1,4 @@
-Assunto: Mensagem para $list$@$domain$ recusada: $subject$
+Subject: Mensagem para $list$@$domain$ recusada: $subject$
 MIME-Version: 1.0
 Content-Type: multipart/mixed;
  boundary="=_$random0$$random1$_="
