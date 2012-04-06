@@ -15,13 +15,15 @@
     da lista está desligada.
   %endif%
   %ifreason closed%
-    porque os utilizadores não podem subscrever a esta lista por correio eletrónico.
+    porque os utilizadores não podem subscrever a esta lista por correio
+    eletrónico.
   %endif%
   %ifreason subbed%
     porque você já subscreveu esta lista.
   %endif%
   %ifreason expired%
-    porque o administrador da lista levou muito tempo a responder ao seu pedido.
+    porque o administrador da lista levou muito tempo a responder ao seu
+    pedido.
   %endif%
   %ifreason obstruct%
     porque o administrador da lista bloqueou a sua subscrição.
@@ -33,10 +35,11 @@
   %ifreason unsubbed%
     porque você não faz parte da lista.
 
-    %^%%wrap%Se você está a receber muitas mensagens, é possível que já tenha subscrito à lista
-    com outro endereço eletrónico. Para descobrir com que endereço subscreveu,
-    consulte a mensagem de boas vindas da lista ou procure no cabeçalho
-    "Return-Path" de uma mensagem que tenha recebido.
+    %^%%wrap%Se você está a receber muitas mensagens, é possível que já
+    tenha subscrito à lista com outro endereço eletrónico. Para descobrir
+    com que endereço subscreveu, consulte a mensagem de boas vindas da lista
+    ou procure no cabeçalho "Return-Path" de uma mensagem que tenha
+    recebido.
   %endif%
 %endif%
 
@@ -66,8 +69,8 @@
     Você não consegue cancelar o pedido de subscrição
   %endif%
   %ifreason notfound%
-    porque ele não foi encontrado. É possível que outro administrador da lista
-    já o tenha aceite ou rejeitado ou que tenha expirado.
+    porque ele não foi encontrado. É possível que outro administrador da
+    lista já o tenha aceite ou rejeitado ou que tenha expirado.
   %endif%
   %ifreason gatekeepers%
     porque você não é um administrador desta lista.

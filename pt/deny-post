@@ -13,8 +13,7 @@ Content-Transfer-Encoding: 8bit
 %wrap%A mensagem de <$posteraddr$> com o assunto "$subject$" não foi
 entregue na lista
 %ifreason maxmailsize%
-  porque excedia o tamanho máximo permitido de $maxmailsize$
-  bytes.
+  porque excedia o tamanho máximo permitido de $maxmailsize$ bytes.
 %endif%
 %ifreason tocc%
   porque o endereço da lista não foi encontrado no cabeçalho Para: ou CC:
@@ -36,15 +35,15 @@ entregue na lista
   %endif%%endif%
 
   %ifcontrol closedlist closedlistsub%
-    %^%%wrap%Se pretender subscrever a lista, tem que contactar um administrador.
-    Envie uma mensagem para <$list+$owner@$domain$> para contactar
-    o administrador.
+    %^%%wrap%Se pretender subscrever a lista, tem que contactar um
+    administrador. Envie uma mensagem para <$list+$owner@$domain$> para
+    contactar o administrador.
   %endif%
 
-  %^%%wrap%Se você acha que já subscreveu à lista, é possível que tenha indicado
-  um endereço eletrónico diferente. Para descobrir com que endereço subscreveu,
-    consulte a mensagem de boas vindas da lista ou procure no cabeçalho
-    "Return-Path" de uma mensagem que tenha recebido.
+  %^%%wrap%Se você acha que já subscreveu à lista, é possível que tenha
+  indicado um endereço eletrónico diferente. Para descobrir com que endereço
+  subscreveu, consulte a mensagem de boas vindas da lista ou procure no
+  cabeçalho "Return-Path" de uma mensagem que tenha recebido.
 %endif%
 
 %ifreason maxmailsize%

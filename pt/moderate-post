@@ -10,8 +10,8 @@ Content-Transfer-Encoding: 8bit
 
 %text prologue%
 
-%wrap%A mensagem de <$posteraddr$> com o assunto "$subject$" foi
-enviada para publicação. Esta mensagem requer moderação
+%wrap%A mensagem de <$posteraddr$> com o assunto "$subject$" foi enviada
+para publicação. Esta mensagem requer moderação
 %ifreason modnonsubposts%
   porque o remetente não é um subscritor.
 %endif%
@@ -27,15 +27,16 @@ Mensagem segue em baixo.
 bastando, para o efeito, responder a esta mensagem.
 
 %ifcontrol subonrelease%
-  %^%%wrap%Se quiser, pode publicar a mensagem e simultaneamente adicionar o remetente
-  à lista, enviando uma mensagem para um dos seguintes endereços eletrónicos:%nowrap%
+  %^%%wrap%Se quiser, pode publicar a mensagem e simultaneamente adicionar o
+  remetente à lista, enviando uma mensagem para um dos seguintes endereços
+  eletrónicos:%nowrap%
   %^%- %wrap%Normal version: <$listsubreleaseaddr$>%nowrap%
   %^%- %wrap%Digest version: <$digestsubreleaseaddr$>%nowrap%
   %^%- %wrap%No-mail version: <$nomailsubreleaseaddr$>%nowrap%
 %endif%
 
-%wrap%Se não quiser fazer isto, envie uma mensagem para
-<$rejectaddr$> ou ignore esta mensagem.
+%wrap%Se não quiser fazer isto, envie uma mensagem para <$rejectaddr$> ou
+ignore esta mensagem.
 
 Os seguintes moderadores receberam esta mensagem:
 - %moderators%

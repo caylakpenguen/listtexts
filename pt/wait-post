@@ -11,7 +11,8 @@ Content-Transfer-Encoding: 8bit
 %text prologue%
 
 %wrap%A mensagem de <$posteraddr$> com o assunto "$subject$" foi enviada
-para a lista. Contudo, os moderadores ainda não a publicaram pois está em lista de espera para revisão
+para a lista. Contudo, os moderadores ainda não a publicaram pois está em
+lista de espera para revisão
 %ifreason moderated%
   porque esta é uma lista moderada.
 %endif%

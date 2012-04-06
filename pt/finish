@@ -20,13 +20,13 @@
 %endif%
 
 %ifaction release%
-  %^%%wrap%Você publicou na lista a mensagem de <$posteraddr$>
-  com o assunto "$subject$".
+  %^%%wrap%Você publicou na lista a mensagem de <$posteraddr$> com o assunto
+  "$subject$".
 %endif%
 
 %ifaction reject%
-  %^%%wrap%Você rejeitou a mensagem de <$posteraddr$>
-  com o assunto "$subject$".
+  %^%%wrap%Você rejeitou a mensagem de <$posteraddr$> com o assunto
+  "$subject$".
 %endif%
 
 %ifaction permit%
@@ -34,8 +34,7 @@
 %endif%
 
 %ifaction obstruct%
-  %^%%wrap%Você não permitiu que <$subaddr$> fosse integrado
-  na lista
+  %^%%wrap%Você não permitiu que <$subaddr$> fosse integrado na lista
 %endif%
 
 %ifaction post%
@@ -49,7 +48,7 @@
   %ifreason request%
     Agradecemos a
   %endif%
-  sua mensagem com o assunto "$subject$".
-  Está, neste momento, a ser publicada na lista.
+  sua mensagem com o assunto "$subject$". Está, neste momento, a ser
+  publicada na lista.
 %endif%
 

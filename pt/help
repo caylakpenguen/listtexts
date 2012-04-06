@@ -15,38 +15,41 @@ os subscritores recebem uma cópia.
 %endif%
 
 %ifncontrol nodigestsub%
-  %^%- %wrap%Versão resumida: os subscritores recebem diversas
-    mensagens numa única mensagem, em intervalos periódicos, ou quando se acumularem
-    um deteminado conjunto de mensagens.
+  %^%- %wrap%Versão resumida: os subscritores recebem diversas mensagens
+  numa única mensagem, em intervalos periódicos, ou quando se acumularem um
+  deteminado conjunto de mensagens.
   %ifcontrol closedlist closedlistsub%
     Subscrever enviando uma mensagem para o administrador da lista.
   %else%
-    Subscrever enviando uma mensagem para <$list+$subscribe-digest@$domain$>.
+    Subscrever enviando uma mensagem para
+    <$list+$subscribe-digest@$domain$>.
   %endif%
 %endif%
 
 %ifncontrol nonomailsub%
-  %^%- %wrap%Versão no-mail: os subscritores não recebem quaisquer mensagens, 
-    mas são considerado como membros da lista. Isto significa que, por exemplo,
-    você podera enviar mensagens para a lista na qual só os subscritores podem enviar,
-    enquanto segue as mensagens através de um arquivo web ou atravé de outro
-    endereço eletrónico.
+  %^%- %wrap%Versão no-mail: os subscritores não recebem quaisquer
+  mensagens, mas são considerado como membros da lista. Isto significa que,
+  por exemplo, você podera enviar mensagens para a lista na qual só os
+  subscritores podem enviar, enquanto segue as mensagens através de um
+  arquivo web ou atravé de outro endereço eletrónico.
   %ifcontrol closedlist closedlistsub%
     Subscrever enviando uma mensagem para o administrador da lista.
   %else%
-    Subscrever enviando uma mensagem para <$list+$subscribe-nomail@$domain$>.
+    Subscrever enviando uma mensagem para
+    <$list+$subscribe-nomail@$domain$>.
   %endif%
 %endif%
 
 %ifcontrol submod%
-  %^%%wrap%A lista tem administradores que fazem a revisão dos pedidos de subscrição
-  antes de permitir a entrada a novos membros.
+  %^%%wrap%A lista tem administradores que fazem a revisão dos pedidos de
+  subscrição antes de permitir a entrada a novos membros.
 %endif%
 
 %ifcontrol closedlist%
   %^%%wrap%Cancele a subscrição contactando o admnistrador da lista.
 %else%
-  %^%%wrap%Cancele a subscrição enviando uma mensagem para <$list+$unsubscribe@$domain$>.
+  %^%%wrap%Cancele a subscrição enviando uma mensagem para
+  <$list+$unsubscribe@$domain$>.
 %endif%
 
 %wrap%As mensagens são colocadas atravé de <$list$@$domain$>.
@@ -56,12 +59,12 @@ os subscritores recebem uma cópia.
 %endif%%endif%
 
 %ifcontrol moderated%
-  %^%%wrap%A lista tem moderadores que fazem a revisão das mensagens dos subscritores antes de
-  as publicarem na lista.
+  %^%%wrap%A lista tem moderadores que fazem a revisão das mensagens dos
+  subscritores antes de as publicarem na lista.
 %else%
   %ifcontrol subonlypost%%ifcontrol modnonsubposts%
-    %^%%wrap%A lista tem moderadores que fazem a revisão das mensagens dos não subscritores
-	antes de as publicarem na lista.
+    %^%%wrap%A lista tem moderadores que fazem a revisão das mensagens dos
+    não subscritores antes de as publicarem na lista.
   %endif%%endif%
 %endif%
 
@@ -78,11 +81,13 @@ os subscritores recebem uma cópia.
     Os subscritores
   %endif%
   podem obter a mensagem número X do arquivo da lista, enviando uma mensagem
-  para <$list+$get-N@$domain$> (altere o X para o número da mensagem que pretende).
+  para <$list+$get-N@$domain$> (altere o X para o número da mensagem que
+  pretende).
 %endif%%endif%
 
-%wrap%Você pode aceder às perguntas frequentes da lista
-enviando uma mensagem para <$list+$faq@$domain$>.
+%wrap%Você pode aceder às perguntas frequentes da lista enviando uma
+mensagem para <$list+$faq@$domain$>.
 
-%wrap%Para contactar o proprietário da lista, envie uma mensagem para <$list+$owner@$domain$>.
+%wrap%Para contactar o proprietário da lista, envie uma mensagem para
+<$list+$owner@$domain$>.
 
