@@ -2,7 +2,7 @@ Subject: Subscritores de $list$@$domain$
 
 %text prologue%
 
-%wrap%Aqui esta é lista de subscritores
+%wrap%Esta é lista de subscritores
 %iftype all%
   de todas as versões da lista:
 %else%

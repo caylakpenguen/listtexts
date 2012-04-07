@@ -18,7 +18,7 @@ Subject: Bem vindo a $list$@$domain$
   %ifreason admin%
     Um administrador permitiu a sua subscrição na versão
   %else%
-    Você adicionado(a) à versão
+    Você foi adicionado(a) à versão
   %endif%
 %endif%
 %iftype normal% normal %endif%

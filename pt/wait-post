@@ -1,4 +1,4 @@
-Subject: Mensagem à epera de publicação em $list$@$domain$: $subject$
+Subject: Mensagem à espera de publicação em $list$@$domain$: $subject$
 MIME-Version: 1.0
 Content-Type: multipart/mixed;
  boundary="=_$random0$$random1$_="
@@ -20,7 +20,7 @@ lista de espera para revisão
   em virtude de uma regra.
 %endif%
 %ifreason modnonsubposts%
-  porque você não é um subscritor
+  porque você não é um subscritor.
 
   %ifncontrol closedlist%%ifncontrol closedlistsub%
     %^%%text subrelease%

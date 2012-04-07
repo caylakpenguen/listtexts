@@ -20,7 +20,7 @@
 %endif%
 
 %ifaction release%
-  %^%%wrap%Você publicou na lista a mensagem de <$posteraddr$> com o assunto
+  %^%%wrap%Você publicou a mensagem de <$posteraddr$> com o assunto
   "$subject$".
 %endif%
 

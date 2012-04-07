@@ -23,7 +23,7 @@ para publicação. Esta mensagem requer moderação
 %endif%
 Mensagem segue em baixo.
 
-%wrap%Para a pblicar na lista, envie uma mensagem para <$releaseaddr$>
+%wrap%Para a publicar na lista, envie uma mensagem para <$releaseaddr$>
 bastando, para o efeito, responder a esta mensagem.
 
 %ifcontrol subonrelease%
@@ -35,7 +35,7 @@ bastando, para o efeito, responder a esta mensagem.
   %^%- %wrap%No-mail version: <$nomailsubreleaseaddr$>%nowrap%
 %endif%
 
-%wrap%Se não quiser fazer isto, envie uma mensagem para <$rejectaddr$> ou
+%wrap%Se não o quiser fazer, envie uma mensagem para <$rejectaddr$> ou
 ignore esta mensagem.
 
 Os seguintes moderadores receberam esta mensagem:

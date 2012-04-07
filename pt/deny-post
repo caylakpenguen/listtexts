@@ -19,10 +19,10 @@ entregue na lista
   porque o endereço da lista não foi encontrado no cabeçalho Para: ou CC:.
 %endif%
 %ifreason access%
-  porque causa de uma regra de acesso criada por um administrador.
+  porque causa de uma regra criada por um administrador.
 %endif%
 %ifreason expired%
-  porque já passou muito tempo sem que o moderados a publicasse.
+  porque já passou muito tempo sem que um moderador a publicasse.
 %endif%
 %ifreason reject%
   porque um moderador a rejeitou.

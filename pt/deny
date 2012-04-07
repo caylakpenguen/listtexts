@@ -11,8 +11,8 @@
     porque a versão
     %iftype normal% normal %endif%
     %iftype digest% resumida %endif%
-    %iftype nomail% sem mensagens %endif%
-    da lista está desligada.
+    %iftype nomail% no-mail %endif%
+    da lista está inativa.
   %endif%
   %ifreason closed%
     porque os utilizadores não podem subscrever a esta lista por correio
@@ -53,7 +53,7 @@
   %endif%
   %ifreason notfound%
     porque ela não foi encontrada. É possível que outro moderador já a tenha
-    publicado ou rejeitado ou que tenha expirado.
+    publicado, rejeitado ou que tenha expirado.
   %endif%
   %ifreason moderators%
     porque você não é um moderador da lista.
@@ -70,7 +70,7 @@
   %endif%
   %ifreason notfound%
     porque ele não foi encontrado. É possível que outro administrador da
-    lista já o tenha aceite ou rejeitado ou que tenha expirado.
+    lista já o tenha aceite, rejeitado ou que tenha expirado.
   %endif%
   %ifreason gatekeepers%
     porque você não é um administrador desta lista.

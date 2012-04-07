@@ -13,18 +13,18 @@
   %endif%
   solicitou que o endereço eletrónico <$subaddr$> fosse adicionado
   %iftype normal%
-    à lista de correio. Isto significa que, de cada vez que uma mensagem for
+    à lista de correio normal. Isto significa que, de cada vez que uma mensagem for
     enviada para a lista, você receberá uma cópia.
   %endif%
   %iftype digest%
-    à lista de correio. para receber resumos. Isto significa que você
+    à lista de correio resumida. Isto significa que você
     receberá diversas mensagens numa única mensagem, em intervalos
     periódicos, ou quando se acumularem um determinado conjunto de
     mensagens.
   %endif%
   %iftype nomail%
-    à lista de correio, mas sem entrega de mensagens. Isto significa que
-    você não receberá quaisquer mensagens, mas é considerado como membro.
+    à lista de correio no-mail. Isto significa que você não
+    receberá quaisquer mensagens, mas é considerado como membro.
     Isto significa que, por exemplo você poderá enviar mensagens para a
     lista na qual só os subscritores podem enviar, enquanto segue as
     mensagens através de um arquivo web ou através de outro endereço
