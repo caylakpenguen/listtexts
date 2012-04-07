@@ -1,4 +1,4 @@
-Subject: resumo de $list$@$domain$ assunto $digestissue$ ($digestinterval$)
+Subject: Resumo de $list$@$domain$ assunto $digestissue$ ($digestinterval$)
 
 Tópicos (mensagens $digestfirst$ a $digestlast$):
 - %digestthreads%

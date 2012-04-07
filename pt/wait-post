@@ -1,4 +1,4 @@
-Subject: mensagem à epera de publicação em $list$@$domain$: $subject$
+Subject: Mensagem à epera de publicação em $list$@$domain$: $subject$
 MIME-Version: 1.0
 Content-Type: multipart/mixed;
  boundary="=_$random0$$random1$_="

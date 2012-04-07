@@ -1,5 +1,5 @@
-%ifaction sub%Subject: subscrição em $list$@$domain$: $subaddr$%endif%
-%ifaction unsub%Subject: cancelamento da subscrição em $list$@$domain$: $subaddr$%endif%
+%ifaction sub%Subject: Subscrição em $list$@$domain$: $subaddr$%endif%
+%ifaction unsub%Subject: Cancelamento da subscrição em $list$@$domain$: $subaddr$%endif%
 
 %text prologue%
 
