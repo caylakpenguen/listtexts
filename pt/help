@@ -69,8 +69,8 @@ os subscritores recebem uma cópia.
 %endif%
 
 %ifcontrol access%
-  %^%%wrap%A lista também tem regras que podem afetar o envio e
-  moderação das mensagens.
+  %^%%wrap%A lista também tem regras que podem afetar o envio e moderação
+  das mensagens.
 %endif%
 
 %ifncontrol noget%%ifncontrol noarchive%
@@ -80,8 +80,8 @@ os subscritores recebem uma cópia.
   %else%
     Os subscritores
   %endif%
-  podem obter a mensagem número X da lista, enviando uma mensagem
-  para <$list+$get-N@$domain$> (altere o X para o número da mensagem que
+  podem obter a mensagem número X da lista, enviando uma mensagem para
+  <$list+$get-N@$domain$> (altere o X para o número da mensagem que
   pretende).
 %endif%%endif%
 
