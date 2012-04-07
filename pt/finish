@@ -34,7 +34,7 @@
 %endif%
 
 %ifaction obstruct%
-  %^%%wrap%Você não permitiu que <$subaddr$> fosse integrado na lista
+  %^%%wrap%Você não permitiu que <$subaddr$> fosse integrado na lista.
 %endif%
 
 %ifaction post%
