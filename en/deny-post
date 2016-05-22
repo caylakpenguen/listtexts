@@ -47,6 +47,9 @@ be delivered to the list
   at the envelope "Return-Path" header of a message you receive from the
   list.
 %endif%
+%ifreason modonlypost%
+  because you are not a list moderator.
+%endif%
 
 %ifreason maxmailsize%
   %^%(The beginning of the denied message is below.)
